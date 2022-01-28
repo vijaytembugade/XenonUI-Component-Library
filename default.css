@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;900&display=swap");
+
+/* reset css */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+/* colors css  */
+:root{
+    /* main colors */
+    --primary-color: #9370db;
+    --secondary-color: #f0739d;
+    --ternary-color: #0eafa7;
+
+    /* background color */
+    --bg-color: #f1f1f1;
+    --light-color : #fff;
+
+    /* text color  */
+    --dark-color: #171717;
+    --gray-color: #8d8d8d;
+
+    /* accent colors  */
+    --success-color: #47cf73;
+    --warning-color: #fedc56;
+    --danger-color: #cf4751;
+
+    /* shades of color */
+    --primary-color-shade: #bd9cff;
+    --secondary-color-shade: #f7aec6;
+    --success-color-shade: #b2fac9c4;
+    --warning-color-shade: #fedc566d;
+    --danger-color-shade: #e22e3ad5;
+
+    /* dark theme color */
+    --dark-theme-bg-color: #1f2933;
+    --dark-theme-text-color: #f7f7f7;
+}
+
+
+/* body css */
+body {
+    background: var(--bg-color);
+    font-family: "Poppins", sans-serif;
+    line-height: 1.4rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* typography */
+
+h2,
+h3,
+h4,
+h1,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+.title{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.subtitle{
+    font-size: 1rem;
+    color: var(--dark-color)
+}
+
+
+/* text colors  */
+.light-text{
+    color: var(--light-color);
+}
+
+.dark-text{
+    color: var(--dark-color);
+}
+
+.gray-text{
+    color: var(--gray-color);
+}
+
+.primary-text{
+    color: var(--primary-color);
+}
+
+.secondary-text{
+    color: var(--secondary-color);
+}
+
+.ternary-text{
+    color: var(--ternary-color);
+}
+
+.success-text{
+    color: var(--success-color);
+}
+
+.danger-text{
+    color: var(--danger-color);
+}
+
+.warning-text{
+    color: var(--warning-color);
+}
+
+
+/* background-colors css  */
+
+.primary-bg-color{
+    background-color: var(--primary-color)
+}
+
+.secondary-bg-color{
+    background-color: var(--secondary-color);
+}
+
+.ternary-bg-color{
+    background-color: var(--ternary-color);
+}
+
+.light-bg-color{
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.dark-bg-color{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.gray-bg-color{
+    background-color: var(--gray-color)
+}
+
+.success-bg-color{
+    background-color: var(--success-color-shade)
+}
+
+.danger-bg-color{
+    background-color: var(--danger-color-shade)
+}
+
+.warning-bg-color{
+    background-color: var(--warning-color-shade)
+}
+
+/* material icon styles */
+.material-icons.md-18 {
+    font-size: 18px;
+  }
+  .material-icons.md-24 {
+    font-size: 24px;
+  }
+  .material-icons.md-36 {
+    font-size: 36px;
+  }
+  .material-icons.md-48 {
+    font-size: 48px;
+  }
+  
+  .material-icons {
+    display: inline-flex;
+    vertical-align: middle;
+    padding-bottom: 3px;
+  }
+
+/* container */
+.container{
+    margin: 0rem 3rem ;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+
