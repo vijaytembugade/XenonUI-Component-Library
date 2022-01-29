@@ -102,14 +102,16 @@ video {
     /* accent colors  */
     --success-color: #47cf73;
     --warning-color: #fedc56;
-    --danger-color: #cf4751;
+    --danger-color: #ee555f;
 
     /* shades of color */
-    --primary-color-shade: #bd9cff;
-    --secondary-color-shade: #f7aec6;
-    --success-color-shade: #b2fac9c4;
-    --warning-color-shade: #fedc566d;
-    --danger-color-shade: #e22e3ad5;
+    --primary-color-shade: #b18eff;
+    --secondary-color-shade: #f38aad;
+    --ternary-color-shade: #4ee9e1;
+    --success-color-shade: #a0fabe;
+    --warning-color-shade: #ffefaf;
+    --danger-color-shade: #ffa2a9;
+    --dark-color-shade: #2c2c2c;
 
     /* dark theme color */
     --dark-theme-bg-color: #1f2933;
@@ -263,4 +265,12 @@ h6 {
     flex-wrap: wrap;
 }
 
+.flex-container-verticle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
 
