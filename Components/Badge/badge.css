@@ -1,0 +1,64 @@
+@import url("../Avatar/avatar.css");
+/* normal badge  */
+.badge {
+  padding: 0.2rem 0.4rem;
+  min-width: 0.5rem;
+  min-height: 0.5rem;
+  display: inline-block;
+  border-radius: 0.4rem;
+  position: relative;
+  bottom: 1rem;
+  right: 5px;
+  font-size: 60%;
+  font-weight: bold;
+}
+
+/* round badge  */
+
+.badge-round {
+  padding: 0.2rem;
+  min-width: fit-content;
+  min-height: 0.7rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--bg-color);
+}
+
+/* for badge with avatar */
+
+.badge-with-avatar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-with-avatar > .badge {
+  padding: 0;
+  border-radius: 50%;
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  border: 1px solid var(--bg-color);
+}
+
+/* 
+@media only screen and (max-width: 768px) {
+  .badge {
+    padding: 0.2rem 0.4rem;
+    min-width: 0.5rem;
+    min-height: 0.5rem;
+    display: inline-block;
+    border-radius: 0.4rem;
+    position: relative;
+    bottom: 1rem;
+    right: 5px;
+    font-size: 60%;
+    font-weight: bold;
+  }
+  
+} */
