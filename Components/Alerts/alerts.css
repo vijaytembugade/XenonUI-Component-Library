@@ -34,29 +34,17 @@
 
 @media only screen and (max-width: 768px) {
     .error-alert{
-        background-color: var(--danger-color-shade);
-        color: var(--danger-color);
         min-width: fit-content;
-        padding: 0.5rem;
     }
     
     .success-alert{
-        background-color: var(--success-color-shade);
-        color: var(--success-color);
-        padding: 0.5rem;
         min-width: fit-content;
     }
     
     .warning-alert{
-        background-color: var(--warning-color-shade);
-        color: var(--dark-color);
-        padding: 0.5rem;
         min-width: fit-content;
     }
     .primary-alert{
-        background-color: var(--primary-color-shade);
-        color: var(--light-color);
-        padding: 0.5rem;
         min-width: fit-content;
     }
 }
