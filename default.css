@@ -150,7 +150,7 @@ h6 {
 
 .subtitle{
     font-size: 1rem;
-    color: var(--dark-color)
+    color: var(--dark-color);
 }
 
 
@@ -274,3 +274,8 @@ h6 {
     flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 768px) {
+    .container{
+        margin: 0rem 1rem ;
+    }
+}
