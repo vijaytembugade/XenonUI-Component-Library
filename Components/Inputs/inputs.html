@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs</title>
+    <link rel="stylesheet" href="./inputs.css" />
+    <link rel="stylesheet" href="../Buttons/buttons.css" />
+    <link rel="stylesheet" href="../../default.css" />
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  </head>
+  <body class="container flex-container-verticle">
+    <h2>Default Input</h2>
+    <!-- Default Input field -->
+    <div class="form-container">
+      <label class="input-label" for="">
+        Enter your Name
+        <input required type="text" />
+      </label>
+      <label class="input-label" for="">
+        Email
+        <input disabled required type="text" placeholder="Disabled Input" />
+      </label>
+    </div>
+
+    <!-- sign in form -->
+    <h2>Form</h2>
+    <div class="form-container">
+      <form class="form-group">
+        <h2>Sign in</h2>
+        <label class="input-label" for="input">
+          Username
+          <input required type="text" />
+        </label>
+        <label class="input-label">
+          Email
+          <input required type="email" />
+        </label>
+
+        <label class="input-label" for="">
+          Password
+          <input
+            required
+            minlength="5"
+            type="password"
+            placeholder="Password"
+            class="input-error"
+          />
+        </label>
+        <span class="validation-error"
+          >Password should be minimum 5 character.</span
+        >
+        <button class="btn btn-primary">
+          Sign In
+        </button>
+      </form>
+    </div>
+
+    <!-- text area -->
+
+    <h2>TextArea</h2>
+    <div class="form-container">
+      <label for="">
+        Introduce about yourself
+        <textarea placeholder=""></textarea>
+      </label>
+    </div>
+
+    <!-- checkboxes -->
+    <h2>checkBox</h2>
+    <div class="">
+      <label>
+        <input type="checkbox" />
+        Accept
+      </label>
+      <label>
+        <input checked type="checkbox" />
+        Accepted
+      </label>
+      <label>
+        <input disabled type="checkbox" />
+        Disabled
+      </label>
+    </div>
+
+    <!-- radio buttons -->
+    <h2>Radio</h2>
+    <div class="">
+      <label>
+        <input type="radio" name="radio-button" />
+        Option 1
+      </label>
+      <label>
+        <input type="radio" name="radio-button" />
+        Option 2
+      </label>
+      <label>
+        <input type="radio" name="radio-button" />
+        Option 3
+      </label>
+    </div>
+    <br />
+    <br />
+  </body>
+</html>
