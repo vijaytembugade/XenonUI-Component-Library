@@ -64,7 +64,8 @@ textarea {
 
 .validation-error {
   color: var(--danger-color);
-  font-size: 12px;
+  font-size: 0.8rem;
+  padding: 0.5rem 0rem;
 }
 
 @media only screen and (max-width: 480px) {
