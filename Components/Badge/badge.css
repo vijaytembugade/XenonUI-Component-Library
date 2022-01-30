@@ -2,8 +2,9 @@
 /* normal badge  */
 .badge {
   padding: 0rem 0.2rem;
-  min-width: 0.5rem;
+  min-width: 1rem;
   min-height: 0.5rem;
+  max-height: 1.5rem;
   display: inline-block;
   border-radius: 0.4rem;
   position: relative;
@@ -11,6 +12,7 @@
   right: 10%;
   font-size: 60%;
   font-weight: bold;
+  border: 1px solid var(--bg-color);
 }
 
 /* round badge  */

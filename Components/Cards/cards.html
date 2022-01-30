@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+    <link rel="stylesheet" href="card.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../Buttons/buttons.css" />
+    <link rel="stylesheet" href="../Badge/badge.css" />
+    <link rel="stylesheet" href="../../default.css" />
+    <link rel="stylesheet" href="./cards.css" />
+  </head>
+  <body class="flex-container">
+    <div style="width: 100%; margin: 3rem;">
+      These are the Card Components it has following type of cards
+      <ul>
+        <li>Basic Card</li>
+        <li> Card with text Overlay</li>
+        <li>Card with dismis</li>
+        <li>Card with badge</li>
+        <li>Horizontal/Verticle Card</li>
+        <li>Card with header</li>
+        <li>Text only Card</li>
+      </ul>
+    </div>
+    <!-- basic card -->
+    <div class="card">
+      <!-- media div -->
+      <div class="card-media">
+        <img class="responsive-img" src="https://picsum.photos/200" />
+      </div>
+      <!-- content div -->
+      <div class="card-content">
+        <span class="title"> Chrome-book 500 </span>
+        <span class="subtitle"> powered by Google </span>
+        <p class="card-description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum,
+          dolor sit amet consectetur adipisicing elit.
+        </p>
+        <span>Price : <del>$500</del> &ensp; $455 </span>
+      </div>
+      <!-- buttons div -->
+      <div class="card-footer">
+        <button class="btn btn-secondary-outline">
+          Add to cart
+          <span class="material-icons md-18"> shopping_cart </span>
+        </button>
+        <button class="btn btn-primary">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- card-overlay -->
+    <div class="card">
+      <!-- media div -->
+      <div class="card-media">
+        <img class="" src="https://picsum.photos/200" />
+      </div>
+      <!-- content div -->
+      <div class="card-content">
+        <span class="title"> Chrome-book 500 </span>
+        <span class="subtitle"> powered by Google </span>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <span>Price : <del>$500</del> &ensp; $455 </span>
+      </div>
+
+      <!-- buttons div -->
+
+      <div class="card-footer">
+        <button class="btn btn-secondary-outline">
+          Add to cart
+          <span class="material-icons md-18"> shopping_cart </span>
+        </button>
+        <button class="btn btn-primary-outline">
+          Buy Now
+          <span class="material-icons md-18"> shopping_bag </span>
+        </button>
+      </div>
+
+      <div class="overlay-content primary-bg-color">
+        <div class="overlay-text light-text">Out of Stock</div>
+        <button class="btn btn-secondary btn-large">Remind me!</button>
+      </div>
+    </div>
+
+    <!-- card with dismis -->
+    <div class="card">
+      <!-- media div -->
+      <div class="card-media">
+        <img class="responsive-img" src="https://picsum.photos/200" />
+      </div>
+      <!-- content div -->
+      <div class="card-content">
+        <span class="title"> Chrome-book 500 </span>
+        <span class="subtitle"> powered by Google </span>
+        <p class="card-description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum,
+          dolor sit amet consectetur adipisicing elit.
+        </p>
+        <span>Price : <del>$500</del> &ensp; $455 </span>
+      </div>
+      <!-- buttons div -->
+      <div class="card-footer">
+        <button class="btn btn-secondary-outline">
+          Add to cart
+          <span class="material-icons md-18"> shopping_cart </span>
+        </button>
+        <button class="btn btn-primary">Buy Now</button>
+      </div>
+
+      <div class="card-dismis light-bg-color">
+        <span class="material-icons"> close </span>
+      </div>
+    </div>
+
+    <!-- card with badge -->
+    <div class="card">
+      <!-- media div -->
+      <div class="card-media">
+        <img class="responsive-img" src="https://picsum.photos/200" />
+      </div>
+      <!-- content div -->
+      <div class="card-content">
+        <span class="title"> Chrome-book 500 </span>
+        <span class="subtitle"> powered by Google </span>
+        <p class="card-description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum,
+          dolor sit amet consectetur adipisicing elit.
+        </p>
+        <span>Price : <del>$500</del> &ensp; $455 </span>
+      </div>
+      <!-- buttons div -->
+      <div class="card-footer">
+        <button class="btn btn-secondary-outline">
+          Add to cart
+          <span class="material-icons md-18"> shopping_cart </span>
+        </button>
+        <button class="btn btn-primary">Buy Now</button>
+      </div>
+
+      <div class="card-badge danger-bg-color light-text">
+        <span class=""> New </span>
+      </div>
+    </div>
+
+    <!-- horizontal card -->
+    <div class="card card-horizontal">
+      <!-- media div -->
+      <div class="card-horizontal-top">
+        <div class="card-media">
+          <img class="" src="https://picsum.photos/200" />
+        </div>
+        <!-- content div -->
+        <div class="card-content">
+          <span class="title"> Chrome-book 500 </span>
+          <span class="subtitle"> powered by Google </span>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <span>Price : <del>$500</del> &ensp; $455 </span>
+        </div>
+      </div>
+      <!-- buttons div -->
+      <div class="card-footer">
+        <button class="btn btn-secondary-outline">
+          Add to cart
+          <span class="material-icons md-18"> shopping_cart </span>
+        </button>
+        <button class="btn btn-primary-outline">
+          Buy Now
+          <span class="material-icons md-18"> shopping_bag </span>
+        </button>
+      </div>
+
+      <div class="card-badge danger-bg-color light-text">
+        <span class=""> New </span>
+      </div>
+    </div>
+
+    <!-- card with header -->
+    <div class="card">
+      <!-- card- header -->
+      <div class="card-header">
+        <span class="title"> One Plus 9T</span>
+        <span class="subtitle"> powered by oneplus </span>
+      </div>
+      <!-- media div -->
+      <div class="card-media">
+        <img class="responsive-img" src="https://picsum.photos/200" />
+      </div>
+      <!-- content div -->
+      <div class="card-content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+        <span> <strong> Price :</strong> <del>$500</del> &ensp; $455 </span>
+      </div>
+      <!-- buttons div -->
+
+      <div class="card-footer">
+        <button class="btn btn-secondary-outline">
+          Add to cart
+          <span class="material-icons md-18"> shopping_cart </span>
+        </button>
+        <button class="btn btn-primary">
+          Buy Now
+          <span class="material-icons md-18"> shopping_bag </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- card with only text -->
+    <div class="card">
+      <!-- card- header -->
+      <div class="card-header">
+        <span class="title">Welcome to MyPage</span>
+        <span class="subtitle"> Amazing solution for everything </span>
+      </div>
+      <!-- content div -->
+      <div class="card-content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <!-- buttons div -->
+
+      <div class="card-footer primary-text">
+        Invite Your friends
+        <span class="material-icons md-18"> share </span>
+      </div>
+    </div>
+  </body>
+</html>
