@@ -30,3 +30,19 @@ li.list-group-item{
 .list-group-item:first-child{
     border-top: 1px solid var(--classic-color);
 }
+
+
+
+
+@media only screen and (max-width: 768px) {
+    ul.list-group{
+        width: 20rem;
+    }
+
+}
+@media only screen and (max-width: 480px) {
+    ul.list-group{
+        width: 100%;
+    }
+
+}
