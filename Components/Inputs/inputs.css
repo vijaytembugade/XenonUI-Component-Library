@@ -27,12 +27,12 @@ textarea {
   color: var(--dark-color);
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #ddd;
+  border: 1px solid var(--classic-color);
   border-radius: 0.2rem;
 }
 
 input:disabled {
-  background-color: #ddd;
+  background-color: var(--classic-color);
   opacity: 0.7;
   border: 1px solid var(--dark-color);
 }
@@ -47,7 +47,9 @@ input[type="radio"] {
 }
 
 textarea {
-  min-height: 160px;
+  min-height: 180px;
+  display: block;
+  min-width: 360px;
 
 }
 

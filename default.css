@@ -97,7 +97,8 @@ video {
 
     /* text color  */
     --dark-color: #171717;
-    --gray-color: #8d8d8d;
+    --gray-color: #777777;
+    --classic-color: #ddd;
 
     /* accent colors  */
     --success-color: #47cf73;
@@ -146,11 +147,14 @@ h6 {
 .title{
     font-size: 1.1rem;
     font-weight: bold;
+    display: block;
+    padding: 0.5rem 0rem;
 }
 
 .subtitle{
     font-size: 1rem;
-    color: var(--dark-color);
+    font-weight: 500;
+    color: var(--gray-color);
 }
 
 
