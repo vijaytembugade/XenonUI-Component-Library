@@ -1,0 +1,28 @@
+.image-container{
+    width: 420px;
+}
+
+.responsive-img{
+    width: 100%;
+    height: 100%;
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+.rounded-img {
+    border-radius: 50%;
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+
+@media only screen and (max-width: 480px) {
+.responsive-img{
+    width: 100%;
+    height: 100%;;
+}
+.image-container{
+    width: 100%;
+}
+}
