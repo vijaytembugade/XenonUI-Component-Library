@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="../../default.css" />
+    <link rel="stylesheet" href="../Avatar/avatar.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="text-dark">
+      <!-- nav icon -->
+      <!-- <div class="nav-item right-nav-item">
+        <i class="nav-icon material-icons md-24"> menu </i>
+      </div> -->
+
+      <!-- nav brand  -->
+      <div class="nav-brand">
+        <img src="../../Xenon.svg" alt="Xenon" />
+      </div>
+
+      <!-- nav-item on right side  -->
+      <a href="" class="nav-item"> Home </a>
+      <a href="" class="nav-item">About</a>
+      <a href="" class="nav-item">Settings</a>
+      <a href="" class="nav-item">Contact</a>
+      <a href="" class="nav-item">    <img class="avatar-xs" src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg" />
+      </a>
+
+      <div id="hamburger" class="hamburger">
+        <span class="material-icons md-36"> menu </span>
+      </div>
+
+      <div class="responsive-navbar">
+        <div id="closeNavbar" class="danger-text">
+          <span  class="material-icons md-36"> close </span>
+          Close
+        </div>
+        <a href="" class="nav-item"> Home </a>
+        <a href="" class="nav-item">About</a>
+        <a href="" class="nav-item">Settings</a>
+        <a href="" class="nav-item">Contact</a>
+        <a href="" class="nav-item">
+          <img class="avatar-sm" src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg" />
+        </a>
+      </div>
+    </nav>
+
+    <script>
+      const hamburger = document.querySelector("#hamburger");
+      const responsiveNavbar = document.querySelector(".responsive-navbar");
+      const closeNavbar = document.querySelector("#closeNavbar");
+
+      hamburger.addEventListener("click", () => {
+        responsiveNavbar.style.display = "flex";
+      });
+
+      closeNavbar.addEventListener("click", () => {
+        responsiveNavbar.style.display = "none";
+      });
+
+      window.addEventListener("resize", () => {
+          if(window.outerWidth > 768){
+            responsiveNavbar.style.display = "none";
+          } 
+      })
+
+
+
+    </script>
+  </body>
+</html>
