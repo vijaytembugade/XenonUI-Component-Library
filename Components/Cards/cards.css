@@ -5,6 +5,7 @@
   min-width: 20rem;
   max-width: 20rem;
   max-height: 31.25rem;
+  /* min-height: 28.125rem; */
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
@@ -56,6 +57,7 @@
 /* card-media  */
 .card-media {
   max-height: 12.5rem;
+  min-width: 12.5rem;
   padding: 0.4rem;
 }
 
@@ -70,7 +72,8 @@
 .card-content {
   display: flex;
   flex-direction: column;
-  max-height: 8.75rem;
+  max-height: 10rem;
+  min-width: 8.75rem;
   padding: 1rem 2rem;
   height: fit-content;
 }
@@ -91,7 +94,6 @@
 .card-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-width: thin;
-  max-height: 100px;
   padding: 0.5rem;
   flex-wrap: wrap;
   display: flex;
@@ -165,7 +167,7 @@
 @media only screen and (max-width: 768px) {
   .card {
     background-color: var(--light-color);
-    min-width: 15rem;
+    min-width: 17rem;
     max-width: 17rem;
     max-height: 31.25rem;
     margin: 0.5rem;
@@ -185,7 +187,7 @@
   /* horizontal card in mobile view */
   .card-horizontal {
     width: 100%;
-    min-width: 15rem;
+    min-width: 17rem;
     max-width: 17rem;
     max-height: 31.25rem;
   }
