@@ -105,6 +105,9 @@ video {
     --warning-color: #fedc56;
     --danger-color: #ee555f;
 
+    /* rating color */
+    --rating-color: #ffbb28;
+
     /* shades of color */
     --primary-color-shade: #b18eff;
     --secondary-color-shade: #f38aad;
