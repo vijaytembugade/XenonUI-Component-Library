@@ -1,0 +1,44 @@
+/* docsite main contett */
+
+.doc-container {
+  display: flex;
+  justify-content: center;
+  margin:6rem;
+  position: relative;
+}
+
+.sidebar {
+  padding: rem;
+  position: sticky;
+  display: flex;
+  flex: 0.2;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: fit-content;
+  scroll-margin-block: 10rem;
+  transition: all 0.5s
+}
+
+.sidebar > div {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.sidebar > div:hover,
+.sidebar > div:focus {
+  color: var(--primary-color);
+}
+
+.main-content {
+  display: flex;
+  flex: 0.8;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+}
+
+.code-box {
+    margin:2rem 0rem ;
+}
+
+
