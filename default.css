@@ -105,6 +105,9 @@ video {
     --warning-color: #fedc56;
     --danger-color: #ee555f;
 
+    /* rating color */
+    --rating-color: #ffbb28;
+
     /* shades of color */
     --primary-color-shade: #b18eff;
     --secondary-color-shade: #f38aad;
@@ -276,6 +279,15 @@ h6 {
     flex-direction: column;
     gap: 2rem;
     flex-wrap: wrap;
+}
+
+/* functional utilities */
+.hidden{
+    display: none;
+}
+
+.show{
+    display: flex;
 }
 
 @media only screen and (max-width: 768px) {

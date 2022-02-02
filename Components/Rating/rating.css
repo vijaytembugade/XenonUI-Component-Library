@@ -1,0 +1,8 @@
+@import url("../../default.css");
+
+.rating{
+/* temporary class , might need to add something here later */
+}
+.rated{
+    color: var(--rating-color);
+}

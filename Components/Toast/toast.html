@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="../../default.css" />
+    <link rel="stylesheet" href="../Avatar/avatar.css" />
+    <link rel="stylesheet" href="./toast.css" />
+    <link rel="stylesheet" href="../Buttons/buttons.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="container flex-container">
+    <button id="showToast" class="btn btn-primary-outline">Show Toast</button>
+    <div class="toast gray-bg-color light-text hidden">
+      <div class="toast-text">Can't send photo. Retry in 5 seconds.</div>
+      <div class="toast-text secondary-text">
+        <strong> RETRY </strong>
+      </div>
+      <div class="toast-text close-toast">&times</div>
+    </div>
+  </body>
+
+  <script>
+    const showToast = document.querySelector("#showToast");
+    const toast = document.querySelector(".toast");
+    let toastBoolean = false;
+    showToast.addEventListener("click", () => {
+      toast.classList.toggle("hidden");
+      showToast.innerText = toastBoolean ? "show toast" : "hide toast";
+      toastBoolean = !toastBoolean;
+    });
+
+    const closeToast = document.querySelector(".close-toast")
+    closeToast.addEventListener("click", () =>{
+        toast.classList.add("hidden");
+    })
+  </script>
+</html>

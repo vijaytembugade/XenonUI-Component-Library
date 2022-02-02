@@ -1,0 +1,49 @@
+
+
+.toast{
+    position: fixed;
+    bottom: 3rem;
+    left: 3rem;
+    z-index: 99;
+    display:flex;
+    justify-content: start;
+    width: 100%;
+    max-width: 30rem;
+    border-radius:0.5rem;
+}
+.toast-text{
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.toast-text:first-child{
+    margin-right: auto;
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: flex;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .toast{
+        bottom: 1rem;
+        left: 1rem;
+        z-index: 99;
+        width: 75%;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .toast{
+        bottom: 1rem;
+        /* left: 1rem; */
+        z-index: 99;
+        width: 75%;
+    }
+}
