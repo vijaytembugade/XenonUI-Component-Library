@@ -81,6 +81,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 
@@ -135,6 +136,11 @@ a{
     color: inherit;
 }
 
+div{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 
 /* typography */
 
@@ -158,6 +164,10 @@ h6 {
     font-size: 1rem;
     font-weight: 500;
     color: var(--gray-color);
+}
+
+.bold-text{
+    font-weight: 600;
 }
 
 
@@ -218,6 +228,10 @@ h6 {
     color: var(--dark-color);
 }
 
+.classic-bg-color{
+    background-color: var(--classic-color);
+}
+
 .dark-bg-color{
     background-color: var(--dark-color);
     color: var(--light-color);
@@ -270,6 +284,8 @@ h6 {
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
+    text-align: justify;
+
 }
 
 .flex-container-verticle{
@@ -279,6 +295,11 @@ h6 {
     flex-direction: column;
     gap: 2rem;
     flex-wrap: wrap;
+}
+
+/* paddings */
+.pd-1{
+    padding: 1rem;
 }
 
 /* functional utilities */

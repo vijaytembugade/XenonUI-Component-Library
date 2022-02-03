@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xenon- UI</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../default.css" />
+  <link rel="stylesheet" href="./documentation.css">
+  <link rel="stylesheet" href="../Components/Lists/list.css">
+  <link rel="stylesheet" href="../Components//Avatar/avatar.css" />
+  <link rel="stylesheet" href="../Components/Alerts/alerts.css">
+  <link rel="stylesheet" href="../Components/Badge/badge.css">
+  <link rel="stylesheet" href="../Components/Text Utilities/text_utilities.css">
+  <link rel="stylesheet" href="../Components/Navbar/navbar.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+
+</head>
+
+<body class="">
+  <nav class="text-dark">
+
+    <!-- nav brand  -->
+    <div class="nav-brand">
+      <img src="../Xenon.svg" alt="Xenon" />
+    </div>
+
+    <!-- nav-item on right side  -->
+    <a href="" class="nav-item"> Home </a>
+    <a href="" class="nav-item">Documentation</a>
+
+    <div id="hamburger" class="hamburger">
+      <span class="material-icons md-36"> menu </span>
+    </div>
+
+    <div class="responsive-navbar">
+      <div id="closeNavbar" class="danger-text">
+        <span class="material-icons md-36"> close </span>
+        Close
+      </div>
+      <a href="" class="nav-item"> Home </a>
+      <a href="" class="nav-item">Documentation</a>
+    </div>
+  </nav>
+
+  <div class="doc-container">
+    <div class="sidebar">
+      <span class="title">Get Started</span>
+      <div id="introduction-id">Introduction</div>
+      <div id="color-id">Colors</div>
+      <div id="typography-id">Typography</div>
+      <hr>
+      <span class="title">Components</span>
+      <div id="avatar-id">Avatar</div>
+      <div id="alert-id">Alert</div>
+      <div id="badge-id">Badge</div>
+      <div id="button-id">Button</div>
+      <div id="card-id">Cards</div>
+      <div id="image-id">Images</div>
+      <div id="input-id">Inputs</div>
+      <div id="toast-id">Toast</div>
+      <div id="list-id">List</div>
+    </div>
+    <div class="main-content">
+      <div id="introduction">Intro</div>
+      <div id="color">Colors</div>
+      <div id="typography">Typography</div>
+      <div id="avatar">
+        <h2>Avatar</h2>
+        <p>Avatars are user profile pictures, usually found in circular shapes. It gives recognisable idetity to the users, objects, spaces or repositiory.</p>
+        <hr>
+
+        <p class="title">Profile Avatar</p>
+        <p>Profile Avatars can be created using the class <span class="secondary-text">avatar</span>, inside the <stong>img</stong>tag.</p>
+
+
+        <div class="flex-container classic-bg-color pd-1">
+          <img class="avatar" src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg" />
+          <img class="avatar" src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg" />
+          <img class="avatar" src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg" />
+        </div>
+
+        <div class="code-box">
+          <iframe src="https://www.thiscodeworks.com/embed/61face35b783be0015bbaf2f"
+            style="font-style: 2rem; width: 100%; height: 99px;" frameborder="0"></iframe>
+          </iframe>
+        </div>
+
+        <hr>
+        <p class="title">Sized Avatar</p>
+        <p>Sized Avatar have total for type of sizes. <span class="primary-text">xs, sm, md and lg</span> .</p>
+        <p>It can be used by assigning <span class="secondary-text">avatar-sm, avatar-md, avatar-xs, avatar-lg </span>classes to <strong> img </strong>tag.
+        </p>
+
+        <div class="flex-container classic-bg-color pd-1">
+          <img class="avatar-xs" src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg" />
+          <img class="avatar-sm" src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg" />
+          <img class="avatar-md" src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg" />
+          <img class="avatar-lg" src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg" />
+        </div>
+
+        <div class="code-box">
+          <iframe src="https://www.thiscodeworks.com/embed/61fad46ab783be0015bbaf43" style="width: 100%; height: 138px;"
+            frameborder="0"></iframe>
+          </iframe>
+        </div>
+      </div>
+      <div id="alert">
+        <h2>Alerts</h2>
+        <p>An alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.</p>
+        <hr>
+        <p class="title">
+          Alerts</p>  
+        <p>Total Four types of alert with class are available primary-alert,error-alert, succes-alert & warning-alert. </p>
+         <p>Alerts can be assigned by useing four type of classes on div elemt. Those type of classes are, <span class="secondary-text">primary-alert, error-alert, warning-alert, success-alert</span>.</p>
+
+         <div class="flex-container-verticle classic-bg-color pd-1">
+           <div class="primary-alert">
+             <span class="material-icons">
+               email
+             </span>
+             <span >You have new Message!</>
+           </div>
+          <div class="error-alert">
+            <span class="material-icons">
+                error
+            </span>
+            <span >Danger: An error occured!</span>
+          </div>
+          <div class="warning-alert">
+            <span class="material-icons">
+              gpp_maybe
+            </span>
+            <span>Warning: Data may get leaked!</>
+          </div>
+      
+          <div class="success-alert">
+            <span class="material-icons">
+                check_circle
+                </span>
+            <span>Success: Operation Successful!</span>
+          </div>
+      
+    
+         </div>
+
+         <div class="code-box">
+          <iframe src="https://www.thiscodeworks.com/embed/61fade70b783be0015bbaf59" style="width: 100%; height: 437px;" frameborder="0"></iframe>
+         </div>
+      </div>
+
+      <div id="badge">
+        <h2>Badges</h2>
+        <p>Badges are circled element on top-right or bottom-right corner of any element. They shows notification status, online/offline status and many other use cases.</p>
+        <hr>
+
+        <p class="title">Badge with icons</p>
+        <p>In <strong>div</strong> element, by specifying one icon and other one as span element with classes <span class="secondary-text">badge , badge-round </span> we can create a badge with icon.</p>
+
+        <p>Normal badge element with class <span class="primary-text">badge</span> will create badge with curved corners.</p>
+        <p>Rounded badge need a class <span class="primary-text">badge-round</span> along with class badge.</p>
+
+        <div class=" flex-container classic-bg-color pd-1">
+          <div>
+            <span class="material-icons md-48"> email </span>
+            <span class="badge  danger-bg-color">new</span>
+          </div>
+          <div>
+            <span class="material-icons md-48"> error </span>
+            <span class="badge badge-round danger-bg-color">5</span>
+          </div>
+        </div>
+
+        <div class="code-box">
+          <iframe src="https://www.thiscodeworks.com/embed/61faeaf7b783be0015bbaf67" style="width: 100%; height: 203px;" frameborder="0"></iframe>
+        </div>
+        <hr>
+
+        <p class="title">Badge with Text</p>
+        <p>As above , Text will also have badge which shows a status and numbers on it.</p>
+        <div class="flex-container classic-bg-color pd-1">
+          <div>
+            random text
+            <span class="badge badge-round primary-bg-color">5</span>
+          </div>
+        </div>
+
+        <div class="code-box">
+          <iframe src="https://www.thiscodeworks.com/embed/61faec47b783be0015bbaf69" style="width: 100%; height: 138px;" frameborder="0"></iframe>
+        </div>
+
+        <hr>
+        <p class="title">Badge with avatar</p>
+        <p>Badges on avatar shows status as online or offline of the user.</p>
+        <li>Element<strong> div </strong> with class <span class="secondary-text">badge-with-avatar.</span></li>
+        <li>It will have two part, one with <strong>
+          img 
+        </strong>
+        tag and other one is <strong>
+          span 
+        </strong>
+        tag .</li>
+        <li>Image will have class with avatar and span with have <span class="primary-text">badge & badge-round</span> class on it.</li>
+        <p>You can change the color of badge depend on user's status.</p>
+
+        <div class="flex-container classic-bg-color pd-1">
+          <div class="badge-with-avatar">
+            <img
+              class="avatar-md"
+              src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+            />
+            <span class="badge badge-round secondary-bg-color"></span>
+          </div>
+          <div class="badge-with-avatar">
+            <img
+              class="avatar-md"
+              src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+            />
+            <span class="badge badge-round success-bg-color"></span>
+          </div>
+          <div class="badge-with-avatar">
+            <img
+              class="avatar-md"
+              src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+            />
+            <span class="badge badge-round gray-bg-color"></span>
+          </div>
+        </div>
+
+        <div class="code-box">
+          <iframe src="https://www.thiscodeworks.com/embed/61faefc5b783be0015bbaf6d" style="width: 100%; height: 190px;" frameborder="0"></iframe>
+        </div>
+
+
+
+
+
+
+      </div>
+      <div id="button">Buttons</div>
+      <div id="card">Cards</div>
+      <div id="image">Image</div>
+      <div id="input">Input</div>
+      <div id="toast">Toast</div>
+      <div id="list">List</div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="./documenation.js"></script>
+
+</body>
+
+</html>

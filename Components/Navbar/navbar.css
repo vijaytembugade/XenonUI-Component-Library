@@ -1,26 +1,35 @@
+@import url("../../default.css");
+
 nav{
     display:flex;
     justify-content:flex-start;
     align-items:center;
-
+    padding: 1rem 8rem 0rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:var(--bg-color);
+    height: 5rem;
 }
-
 .nav-brand{
     margin-right: auto;
     width: 7rem;
     min-width: 5rem;
-    margin-left: 4rem;
 }
 
+
 .nav-item{
-    min-width: 5rem;
+    min-width: 8rem;
     cursor: pointer;
     transition: all 0.5s;
+    text-align: center;
 }
 
 
 .nav-item:hover , .nav-item:focus{
-    font-weight: bold;
+    font-weight:500;
 }
 
 .hamburger {
@@ -34,6 +43,10 @@ nav{
 
 
 @media only screen and (max-width: 768px) {
+
+    nav{
+        padding: 1rem 2rem 0rem;
+    }
 
     .nav-item{
         display: none;
@@ -75,6 +88,9 @@ nav{
 }
 
 @media only screen and (max-width: 480px) {
+    nav{
+        padding: 1rem 0rem;
+    }
     .responsive-navbar{
         display: none;
         flex-direction: column;
