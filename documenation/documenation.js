@@ -21,7 +21,7 @@ window.addEventListener("resize", () => {
 
 //show and hide 
 $(document).ready(function () {
-  $("#introduction").show();
+  $("#introduction").hide();
   $("#avatar").hide();
   $("#alert").hide();
   $("#badge").hide();
@@ -33,6 +33,10 @@ $(document).ready(function () {
   $("#toast").hide();
   $("#list").hide();
   $("#input").hide();
+
+  $(".sidebar").on("click", "div", ()=>{
+    window.scrollTo(0, 0);
+  })
 
   $("#introduction-id").click(function () {
     $(this).addClass("bold-text")

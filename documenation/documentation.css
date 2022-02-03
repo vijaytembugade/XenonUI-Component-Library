@@ -8,13 +8,14 @@
 }
 
 .sidebar {
-  padding: rem;
   position: sticky;
+  top: 6rem;
+  bottom: 6rem;
   display: flex;
   flex: 0.2;
   justify-content: flex-start;
   flex-direction: column;
-  height: fit-content;
+  height: 100vh;
   scroll-margin-block: 10rem;
   transition: all 0.5s
 }
@@ -40,5 +41,6 @@
 .code-box {
     margin:2rem 0rem ;
 }
+
 
 

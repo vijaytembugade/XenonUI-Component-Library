@@ -6,9 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xenon- UI</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
   <link rel="stylesheet" href="../default.css" />
+  <link rel="stylesheet" href="../Components/Buttons/buttons.css">
   <link rel="stylesheet" href="./documentation.css">
   <link rel="stylesheet" href="../Components/Lists/list.css">
   <link rel="stylesheet" href="../Components//Avatar/avatar.css" />
@@ -16,8 +20,8 @@
   <link rel="stylesheet" href="../Components/Badge/badge.css">
   <link rel="stylesheet" href="../Components/Text Utilities/text_utilities.css">
   <link rel="stylesheet" href="../Components/Navbar/navbar.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-  </script>
+ 
+
 
 </head>
 
@@ -241,7 +245,157 @@
 
 
       </div>
-      <div id="button">Buttons</div>
+      <div id="button">
+        <h2>Buttons</h2>
+        <p>
+          Buttons are very important aspect of any website. We provide diversity of buttons , from which user can take action and make choices.  
+        </p>
+        <hr>
+        <p class="title">Normal Buttons</p>
+        <p>Use class <span class="secondary-text">btn</span> along with <span class="secondary-text">btn-variant</span>.</p>
+        
+        <div class="flex-container classic-bg-color pd-1">
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-secondary">Secondary</button>
+          <button class="btn btn-ternary">Ternary</button>
+          <button class="btn btn-success">Success</button>
+          <button class="btn btn-warning">Warning</button>
+          <button class="btn btn-danger">Danger</button>
+          <button class="btn btn-dark">Dark</button>
+          <a class="btn btn-link light-bg-color" href="#">Link</a>
+        </div>
+
+      
+
+        <div class="code-box">
+          <iframe src="https://www.thiscodeworks.com/embed/61fbdd4d6ab14d0015c32d66" style="width: 100%; height: 190px;" frameborder="0"></iframe>
+        </div>
+        <hr>
+
+        <p class="title">Outline Buttons</p>
+        <p>Sometimes, we need buttons which are more likely to have animation and which looks good when we hover. That where outline buttons comes into play.</p>
+        <p>We can add class <span class="secondary-text">btn-variant-outline</span> on buttons to make button outlined.</p>
+
+        <div class="flex-container classic-bg-color pd-1">
+          <button class="btn btn-primary-outline">Primary</button>
+          <button class="btn btn-secondary-outline">Secondary</button>
+          <button class="btn btn-ternary-outline">Ternary</button>
+          <button class="btn btn-success-outline">Success</button>
+          <button class="btn btn-warning-outline">Warning</button>
+          <button class="btn btn-danger-outline">Danger</button>
+          <button class="btn btn-dark-outline">Dark</button>
+        </div>
+        <!--  -->
+  
+        <div class="code-box">
+          <iframe src="https://www.thiscodeworks.com/embed/61fbe1176ab14d0015c32d6b" style="width: 100%; height: 200px;" frameborder="0"></iframe>
+        </div>
+        <hr>
+
+        <p class="title">Large Buttons</p>
+        <p>Large Buttons are very useful for call-to-action which grabs attentions. </p>
+        <p>Adding class <span class="secondary-text">btn-large</span> will make button large.</p>
+
+        <div class="flex-container classic-bg-color pd-1">
+          <button class="btn btn-primary-outline btn-large">Primary</button>
+          <button class="btn btn-secondary btn-large">Secondary</button>
+          <button class="btn btn-success-outline btn-large">Success</button>
+          <button class="btn btn-warning btn-large">Warning</button>
+        </div>
+
+        <div class="code-box">
+          <iframe src="https://www.thiscodeworks.com/embed/61fbe9f96ab14d0015c32d81" style="width: 100%; height: 100px;" frameborder="0"></iframe>
+        </div>
+
+        
+
+        <hr>
+
+        <p class="title">Small Buttons</p>
+        <p>Small buttons are interesting to use with small screen and using along with inline element.</p>
+        <p>Adding class <span class="secondary-text">btn-small</span> on normal button will make that button small.</p>
+
+        <div class="flex-container classic-bg-color pd-1">
+          <button class="btn btn-primary-outline btn-small">Primary</button>
+          <button class="btn btn-secondary btn-small">Secondary</button>
+          <button class="btn btn-success-outline btn-small">Danger</button>
+        </div>
+
+        <div class="code-box">
+          <iframe src="https://www.thiscodeworks.com/embed/61fbeba86ab14d0015c32d85" style="width: 100%; height: 125px;" frameborder="0"></iframe>
+        </div>
+        <hr>
+
+        <p class="title"> Block Button</p>
+        <p>Block buttons are basically, large buttons with 100% of width inherited from parent element.</p>
+        <p>Add class <span class="secondary-text">btn-block</span> to regular buttonsto make button block. </p>
+        <div class="flex-container classic-bg-color pd-1">
+          <button class="btn btn-primary btn-block">Primary</button>
+          <button class="btn btn-secondary-outline btn-block">Secondary</button>
+        </div>
+
+        <div class="code-box">
+          <iframe src="https://www.thiscodeworks.com/embed/61fbed5e6ab14d0015c32d86" style="width: 100%; height: 112px;" frameborder="0"></iframe>
+        </div>
+
+        <hr>
+        <p class="title">Disabled Buttons</p>
+        <p>It is important to restrict users at some place. For example, when user try to login and after clicking on login button, you want user not to click that button again for sometime. Thats where disabled buttons coms into play.</p>
+        <p>We are not using any specific class to make button disabled, instead you can directly give <span class="primary-text">disabled</span> atrribute to make button disbaled.</p>
+
+        <div class="flex-container classic-bg-color pd-1">
+          <button disabled class="btn btn-primary light-text">Primary</button>
+          <button disabled class="btn btn-secondary">Secondary</button>
+          <button disabled class="btn btn-danger-outline">Danger</button>
+        </div>
+
+        <div class="code-box">
+          <iframe src="https://www.thiscodeworks.com/embed/61fc01f26ab14d0015c32d95" style="width: 100%; height: 164px;" frameborder="0"></iframe>
+        </div>
+
+        <hr>
+
+        <p class="title">Floating action Buttons</p>
+        <p>A floating action button (FAB) represents the primary action of a screen.</p>
+        <p>Depending on requirement, you can chnage the position of class <span class="secondary-text">btn-float</span> to fixed or relative. </p>
+        <div class="flex-container classic-bg-color pd-1">
+          <button class="btn btn-secondary btn-float">
+            <i class="material-icons">add</i>
+          </button>
+          <button class="btn btn-danger-outline btn-float">
+            <i class="material-icons">delete</i>
+          </button>
+          <button class="btn btn-warning btn-float">
+            <i class="material-icons">edit</i>
+          </button>
+        </div>
+
+        <div class="code-box">
+          <iframe src="https://www.thiscodeworks.com/embed/61fc06df6ab14d0015c32d9e" style="width: 100%; height: 229px;" frameborder="0"></iframe>
+        </div>
+        <hr>
+        <p class="title">Buttons with Icons</p>
+        <p>It is common to have Buttons which have icons and text. </p>
+        <p>For that, we will using <span class="primary-color">icons</span> inside buttons beside of text. </p>
+
+        <div class="flex-container classic-bg-color pd-1">
+          <button class="btn btn-primary-outline">
+            Create new 
+            <i class="material-icons">add</i>
+          </button>
+          <button class="btn btn-danger-outline">
+            Remove
+            <i class="material-icons">delete</i>
+          </button>
+        </div>
+
+        <div class="code-box">
+          <iframe src="https://www.thiscodeworks.com/embed/61fc08306ab14d0015c32d9f" style="width: 100%; height: 203px;" frameborder="0"></iframe>
+        </div>
+        <hr>
+      </div>
+
+      
       <div id="card">Cards</div>
       <div id="image">Image</div>
       <div id="input">Input</div>
@@ -249,6 +403,7 @@
       <div id="list">List</div>
     </div>
   </div>
+
 
 
 
