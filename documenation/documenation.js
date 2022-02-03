@@ -21,7 +21,7 @@ window.addEventListener("resize", () => {
 
 //show and hide 
 $(document).ready(function () {
-  $("#introduction").hide();
+  $("#introduction").show();
   $("#avatar").hide();
   $("#alert").hide();
   $("#badge").hide();

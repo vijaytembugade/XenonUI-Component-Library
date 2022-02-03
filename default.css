@@ -286,6 +286,7 @@ h6 {
     gap: 2rem;
     flex-wrap: wrap;
     text-align: justify;
+    z-index: -3;
 
 }
 

@@ -1,416 +1,938 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xenon- UI</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xenon- UI</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-  </script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="../default.css" />
+    <link rel="stylesheet" href="../Components/Buttons/buttons.css" />
+    <link rel="stylesheet" href="./documentation.css" />
+    <link rel="stylesheet" href="../Components/Lists/list.css" />
+    <link rel="stylesheet" href="../Components//Avatar/avatar.css" />
+    <link rel="stylesheet" href="../Components/Alerts/alerts.css" />
+    <link rel="stylesheet" href="../Components/Badge/badge.css" />
+    <link rel="stylesheet" href="../Components/Cards/cards.css" />
+    <link
+      rel="stylesheet"
+      href="../Components/Text Utilities/text_utilities.css"
+    />
+    <link rel="stylesheet" href="../Components/Navbar/navbar.css" />
+  </head>
 
-  <link rel="stylesheet" href="../default.css" />
-  <link rel="stylesheet" href="../Components/Buttons/buttons.css">
-  <link rel="stylesheet" href="./documentation.css">
-  <link rel="stylesheet" href="../Components/Lists/list.css">
-  <link rel="stylesheet" href="../Components//Avatar/avatar.css" />
-  <link rel="stylesheet" href="../Components/Alerts/alerts.css">
-  <link rel="stylesheet" href="../Components/Badge/badge.css">
-  <link rel="stylesheet" href="../Components/Text Utilities/text_utilities.css">
-  <link rel="stylesheet" href="../Components/Navbar/navbar.css" />
- 
-
-
-</head>
-
-<body class="">
-  <nav class="text-dark">
-
-    <!-- nav brand  -->
-    <div class="nav-brand">
-      <img src="../Xenon.svg" alt="Xenon" />
-    </div>
-
-    <!-- nav-item on right side  -->
-    <a href="" class="nav-item"> Home </a>
-    <a href="" class="nav-item">Documentation</a>
-
-    <div id="hamburger" class="hamburger">
-      <span class="material-icons md-36"> menu </span>
-    </div>
-
-    <div class="responsive-navbar">
-      <div id="closeNavbar" class="danger-text">
-        <span class="material-icons md-36"> close </span>
-        Close
+  <body class="">
+    <nav class="text-dark">
+      <!-- nav brand  -->
+      <div class="nav-brand">
+        <img src="../Xenon.svg" alt="Xenon" />
       </div>
+
+      <!-- nav-item on right side  -->
       <a href="" class="nav-item"> Home </a>
       <a href="" class="nav-item">Documentation</a>
-    </div>
-  </nav>
 
-  <div class="doc-container">
-    <div class="sidebar">
-      <span class="title">Get Started</span>
-      <div id="introduction-id">Introduction</div>
-      <div id="color-id">Colors</div>
-      <div id="typography-id">Typography</div>
-      <hr>
-      <span class="title">Components</span>
-      <div id="avatar-id">Avatar</div>
-      <div id="alert-id">Alert</div>
-      <div id="badge-id">Badge</div>
-      <div id="button-id">Button</div>
-      <div id="card-id">Cards</div>
-      <div id="image-id">Images</div>
-      <div id="input-id">Inputs</div>
-      <div id="toast-id">Toast</div>
-      <div id="list-id">List</div>
-    </div>
-    <div class="main-content">
-      <div id="introduction">Intro</div>
-      <div id="color">Colors</div>
-      <div id="typography">Typography</div>
-      <div id="avatar">
-        <h2>Avatar</h2>
-        <p>Avatars are user profile pictures, usually found in circular shapes. It gives recognisable idetity to the users, objects, spaces or repositiory.</p>
-        <hr>
-
-        <p class="title">Profile Avatar</p>
-        <p>Profile Avatars can be created using the class <span class="secondary-text">avatar</span>, inside the <stong>img</stong>tag.</p>
-
-
-        <div class="flex-container classic-bg-color pd-1">
-          <img class="avatar" src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg" />
-          <img class="avatar" src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg" />
-          <img class="avatar" src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg" />
-        </div>
-
-        <div class="code-box">
-          <iframe src="https://www.thiscodeworks.com/embed/61face35b783be0015bbaf2f"
-            style="font-style: 2rem; width: 100%; height: 99px;" frameborder="0"></iframe>
-          </iframe>
-        </div>
-
-        <hr>
-        <p class="title">Sized Avatar</p>
-        <p>Sized Avatar have total for type of sizes. <span class="primary-text">xs, sm, md and lg</span> .</p>
-        <p>It can be used by assigning <span class="secondary-text">avatar-sm, avatar-md, avatar-xs, avatar-lg </span>classes to <strong> img </strong>tag.
-        </p>
-
-        <div class="flex-container classic-bg-color pd-1">
-          <img class="avatar-xs" src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg" />
-          <img class="avatar-sm" src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg" />
-          <img class="avatar-md" src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg" />
-          <img class="avatar-lg" src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg" />
-        </div>
-
-        <div class="code-box">
-          <iframe src="https://www.thiscodeworks.com/embed/61fad46ab783be0015bbaf43" style="width: 100%; height: 138px;"
-            frameborder="0"></iframe>
-          </iframe>
-        </div>
+      <div id="hamburger" class="hamburger">
+        <span class="material-icons md-36"> menu </span>
       </div>
-      <div id="alert">
-        <h2>Alerts</h2>
-        <p>An alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.</p>
-        <hr>
-        <p class="title">
-          Alerts</p>  
-        <p>Total Four types of alert with class are available primary-alert,error-alert, succes-alert & warning-alert. </p>
-         <p>Alerts can be assigned by useing four type of classes on div elemt. Those type of classes are, <span class="secondary-text">primary-alert, error-alert, warning-alert, success-alert</span>.</p>
 
-         <div class="flex-container-verticle classic-bg-color pd-1">
-           <div class="primary-alert">
-             <span class="material-icons">
-               email
-             </span>
-             <span >You have new Message!</>
-           </div>
-          <div class="error-alert">
-            <span class="material-icons">
-                error
-            </span>
-            <span >Danger: An error occured!</span>
+      <div class="responsive-navbar">
+        <div id="closeNavbar" class="danger-text">
+          <span class="material-icons md-36"> close </span>
+          Close
+        </div>
+        <a href="" class="nav-item"> Home </a>
+        <a href="" class="nav-item">Documentation</a>
+      </div>
+    </nav>
+
+    <div class="doc-container">
+      <div class="sidebar">
+        <span class="title">Get Started</span>
+        <div id="introduction-id">Introduction</div>
+        <div id="color-id">Colors</div>
+        <div id="typography-id">Typography</div>
+        <hr />
+        <span class="title">Components</span>
+        <div id="avatar-id">Avatar</div>
+        <div id="alert-id">Alert</div>
+        <div id="badge-id">Badge</div>
+        <div id="button-id">Button</div>
+        <div id="card-id">Cards</div>
+        <div id="image-id">Images</div>
+        <div id="input-id">Inputs</div>
+        <div id="toast-id">Toast</div>
+        <div id="list-id">List</div>
+      </div>
+      <div class="main-content">
+        <div id="introduction">Intro</div>
+        <div id="color">Colors</div>
+        <div id="typography">Typography</div>
+        <div id="avatar">
+          <h2>Avatar</h2>
+          <p>
+            Avatars are user profile pictures, usually found in circular shapes.
+            It gives recognisable idetity to the users, objects, spaces or
+            repositiory.
+          </p>
+          <hr />
+
+          <p class="title">Profile Avatar</p>
+          <p>
+            Profile Avatars can be created using the class
+            <span class="secondary-text">avatar</span>, inside the
+            <stong> img</stong>tag.
+          </p>
+
+          <div class="flex-container classic-bg-color pd-1">
+            <img
+              class="avatar"
+              src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+            />
+            <img
+              class="avatar"
+              src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+            />
+            <img
+              class="avatar"
+              src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+            />
           </div>
-          <div class="warning-alert">
-            <span class="material-icons">
-              gpp_maybe
-            </span>
-            <span>Warning: Data may get leaked!</>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61face35b783be0015bbaf2f"
+              style="font-style: 2rem; width: 100%; height: 99px"
+              frameborder="0"
+            >
+            </iframe>
           </div>
-      
-          <div class="success-alert">
-            <span class="material-icons">
-                check_circle
+
+          <hr />
+          <p class="title">Sized Avatar</p>
+          <p>
+            Sized Avatar have total for type of sizes.
+            <span class="primary-text">xs, sm, md and lg</span> .
+          </p>
+          <p>
+            It can be used by assigning
+            <span class="secondary-text"
+              >avatar-sm, avatar-md, avatar-xs, avatar-lg </span
+            >classes to <strong> img </strong>tag.
+          </p>
+
+          <div class="flex-container classic-bg-color pd-1">
+            <img
+              class="avatar-xs"
+              src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+            />
+            <img
+              class="avatar-sm"
+              src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+            />
+            <img
+              class="avatar-md"
+              src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+            />
+            <img
+              class="avatar-lg"
+              src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+            />
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fad46ab783be0015bbaf43"
+              style="width: 100%; height: 138px"
+              frameborder="0"
+            >
+            </iframe>
+          </div>
+        </div>
+        <div id="alert">
+          <h2>Alerts</h2>
+          <p>
+            An alert displays a short, important message in a way that attracts
+            the user's attention without interrupting the user's task.
+          </p>
+          <hr />
+          <p class="title">Alerts</p>
+          <p>
+            Total Four types of alert with class are available
+            primary-alert,error-alert, succes-alert & warning-alert.
+          </p>
+          <p>
+            Alerts can be assigned by useing four type of classes on div elemt.
+            Those type of classes are,
+            <span class="secondary-text"
+              >primary-alert, error-alert, warning-alert, success-alert</span
+            >.
+          </p>
+
+          <div class="flex-container-verticle classic-bg-color pd-1">
+            <div class="primary-alert">
+              <span class="material-icons"> email </span>
+              <span>You have new Message!</span>
+            </div>
+            <div class="error-alert">
+              <span class="material-icons"> error </span>
+              <span>Danger: An error occured!</span>
+            </div>
+            <div class="warning-alert">
+              <span class="material-icons"> gpp_maybe </span>
+              <span>Warning: Data may get leaked!</span>
+            </div>
+
+            <div class="success-alert">
+              <span class="material-icons"> check_circle </span>
+              <span>Success: Operation Successful!</span>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fade70b783be0015bbaf59"
+              style="width: 100%; height: 437px"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+
+        <div id="badge">
+          <h2>Badges</h2>
+          <p>
+            Badges are circled element on top-right or bottom-right corner of
+            any element. They shows notification status, online/offline status
+            and many other use cases.
+          </p>
+          <hr />
+
+          <p class="title">Badge with icons</p>
+          <p>
+            In <strong>div</strong> element, by specifying one icon and other
+            one as span element with classes
+            <span class="secondary-text">badge , badge-round </span> we can
+            create a badge with icon.
+          </p>
+
+          <p>
+            Normal badge element with class
+            <span class="primary-text">badge</span> will create badge with
+            curved corners.
+          </p>
+          <p>
+            Rounded badge need a class
+            <span class="primary-text">badge-round</span> along with class
+            badge.
+          </p>
+
+          <div class="flex-container classic-bg-color pd-1">
+            <div>
+              <span class="material-icons md-48"> email </span>
+              <span class="badge danger-bg-color">new</span>
+            </div>
+            <div>
+              <span class="material-icons md-48"> error </span>
+              <span class="badge badge-round danger-bg-color">5</span>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61faeaf7b783be0015bbaf67"
+              style="width: 100%; height: 203px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+
+          <p class="title">Badge with Text</p>
+          <p>
+            As above , Text will also have badge which shows a status and
+            numbers on it.
+          </p>
+          <div class="flex-container classic-bg-color pd-1">
+            <div>
+              random text
+              <span class="badge badge-round primary-bg-color">5</span>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61faec47b783be0015bbaf69"
+              style="width: 100%; height: 138px"
+              frameborder="0"
+            ></iframe>
+          </div>
+
+          <hr />
+          <p class="title">Badge with avatar</p>
+          <p>Badges on avatar shows status as online or offline of the user.</p>
+          <li>
+            Element<strong> div </strong> with class
+            <span class="secondary-text">badge-with-avatar.</span>
+          </li>
+          <li>
+            It will have two part, one with <strong> img </strong> tag and other
+            one is <strong> span </strong> tag .
+          </li>
+          <li>
+            Image will have class with avatar and span with have
+            <span class="primary-text">badge & badge-round</span> class on it.
+          </li>
+          <p>You can change the color of badge depend on user's status.</p>
+
+          <div class="flex-container classic-bg-color pd-1">
+            <div class="badge-with-avatar">
+              <img
+                class="avatar-md"
+                src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+              />
+              <span class="badge badge-round secondary-bg-color"></span>
+            </div>
+            <div class="badge-with-avatar">
+              <img
+                class="avatar-md"
+                src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+              />
+              <span class="badge badge-round success-bg-color"></span>
+            </div>
+            <div class="badge-with-avatar">
+              <img
+                class="avatar-md"
+                src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+              />
+              <span class="badge badge-round gray-bg-color"></span>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61faefc5b783be0015bbaf6d"
+              style="width: 100%; height: 190px"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+        <div id="button">
+          <h2>Buttons</h2>
+          <p>
+            Buttons are very important aspect of any website. We provide
+            diversity of buttons , from which user can take action and make
+            choices.
+          </p>
+          <hr />
+          <p class="title">Normal Buttons</p>
+          <p>
+            Use class <span class="secondary-text">btn</span> along with
+            <span class="secondary-text">btn-variant</span>.
+          </p>
+
+          <div class="flex-container classic-bg-color pd-1">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-ternary">Ternary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-dark">Dark</button>
+            <a class="btn btn-link light-bg-color" href="#">Link</a>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fbdd4d6ab14d0015c32d66"
+              style="width: 100%; height: 190px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+
+          <p class="title">Outline Buttons</p>
+          <p>
+            Sometimes, we need buttons which are more likely to have animation
+            and which looks good when we hover. That where outline buttons comes
+            into play.
+          </p>
+          <p>
+            We can add class
+            <span class="secondary-text">btn-variant-outline</span> on buttons
+            to make button outlined.
+          </p>
+
+          <div class="flex-container classic-bg-color pd-1">
+            <button class="btn btn-primary-outline">Primary</button>
+            <button class="btn btn-secondary-outline">Secondary</button>
+            <button class="btn btn-ternary-outline">Ternary</button>
+            <button class="btn btn-success-outline">Success</button>
+            <button class="btn btn-warning-outline">Warning</button>
+            <button class="btn btn-danger-outline">Danger</button>
+            <button class="btn btn-dark-outline">Dark</button>
+          </div>
+          <!--  -->
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fbe1176ab14d0015c32d6b"
+              style="width: 100%; height: 200px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+
+          <p class="title">Large Buttons</p>
+          <p>
+            Large Buttons are very useful for call-to-action which grabs
+            attentions.
+          </p>
+          <p>
+            Adding class <span class="secondary-text">btn-large</span> will make
+            button large.
+          </p>
+
+          <div class="flex-container classic-bg-color pd-1">
+            <button class="btn btn-primary-outline btn-large">Primary</button>
+            <button class="btn btn-secondary btn-large">Secondary</button>
+            <button class="btn btn-success-outline btn-large">Success</button>
+            <button class="btn btn-warning btn-large">Warning</button>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fbe9f96ab14d0015c32d81"
+              style="width: 100%; height: 100px"
+              frameborder="0"
+            ></iframe>
+          </div>
+
+          <hr />
+
+          <p class="title">Small Buttons</p>
+          <p>
+            Small buttons are interesting to use with small screen and using
+            along with inline element.
+          </p>
+          <p>
+            Adding class <span class="secondary-text">btn-small</span> on normal
+            button will make that button small.
+          </p>
+
+          <div class="flex-container classic-bg-color pd-1">
+            <button class="btn btn-primary-outline btn-small">Primary</button>
+            <button class="btn btn-secondary btn-small">Secondary</button>
+            <button class="btn btn-success-outline btn-small">Danger</button>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fbeba86ab14d0015c32d85"
+              style="width: 100%; height: 125px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+
+          <p class="title">Block Button</p>
+          <p>
+            Block buttons are basically, large buttons with 100% of width
+            inherited from parent element.
+          </p>
+          <p>
+            Add class <span class="secondary-text">btn-block</span> to regular
+            buttonsto make button block.
+          </p>
+          <div class="flex-container classic-bg-color pd-1">
+            <button class="btn btn-primary btn-block">Primary</button>
+            <button class="btn btn-secondary-outline btn-block">
+              Secondary
+            </button>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fbed5e6ab14d0015c32d86"
+              style="width: 100%; height: 112px"
+              frameborder="0"
+            ></iframe>
+          </div>
+
+          <hr />
+          <p class="title">Disabled Buttons</p>
+          <p>
+            It is important to restrict users at some place. For example, when
+            user try to login and after clicking on login button, you want user
+            not to click that button again for sometime. Thats where disabled
+            buttons coms into play.
+          </p>
+          <p>
+            We are not using any specific class to make button disabled, instead
+            you can directly give
+            <span class="primary-text">disabled</span> atrribute to make button
+            disbaled.
+          </p>
+
+          <div class="flex-container classic-bg-color pd-1">
+            <button disabled class="btn btn-primary light-text">Primary</button>
+            <button disabled class="btn btn-secondary">Secondary</button>
+            <button disabled class="btn btn-danger-outline">Danger</button>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fc01f26ab14d0015c32d95"
+              style="width: 100%; height: 164px"
+              frameborder="0"
+            ></iframe>
+          </div>
+
+          <hr />
+
+          <p class="title">Floating action Buttons</p>
+          <p>
+            A floating action button (FAB) represents the primary action of a
+            screen.
+          </p>
+          <p>
+            Depending on requirement, you can chnage the position of class
+            <span class="secondary-text">btn-float</span> to fixed or relative.
+          </p>
+          <div class="flex-container classic-bg-color pd-1">
+            <button class="btn btn-secondary btn-float">
+              <i class="material-icons">add</i>
+            </button>
+            <button class="btn btn-danger-outline btn-float">
+              <i class="material-icons">delete</i>
+            </button>
+            <button class="btn btn-warning btn-float">
+              <i class="material-icons">edit</i>
+            </button>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fc06df6ab14d0015c32d9e"
+              style="width: 100%; height: 229px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+          <p class="title">Buttons with Icons</p>
+          <p>It is common to have Buttons which have icons and text.</p>
+          <p>
+            For that, we will using
+            <span class="primary-color">icons</span> inside buttons beside of
+            text.
+          </p>
+
+          <div class="flex-container classic-bg-color pd-1">
+            <button class="btn btn-primary-outline">
+              Create new
+              <i class="material-icons">add</i>
+            </button>
+            <button class="btn btn-danger-outline">
+              Remove
+              <i class="material-icons">delete</i>
+            </button>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fc08306ab14d0015c32d9f"
+              style="width: 100%; height: 203px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+        </div>
+
+        <div id="card">
+          <h2>Cards</h2>
+          <p>
+            Cards are basic entity of any web application. They are used on
+            social media apps, e-commerce apps and anything where you have to
+            group a single type of content.
+          </p>
+          <p>
+            Cards display content and actions on individual topics.Cards have
+            images, texts, buttons, icons placed in perticular heirarchy, which
+            signifies a meaning.
+          </p>
+          <hr />
+          <h3 class="ternary-text">Card structure</h3>
+          <p>
+            Our Card have four parts
+            <span class="primary-text"
+              >card-header, card-media, card-content, card-footer</span
+            >.
+          </p>
+          <p class="title title-sm">card-header</p>
+          <div>
+            Card header has specific significance. Whenever we want to give
+            header to the card it can be given in this section.
+          </div>
+          <p class="title title-sm">card-media</p>
+          <div>
+            Card media is <span class="primary-text">Image</span> part of the
+            card.
+          </div>
+          <p class="title title-sm">card-content</p>
+          <div>
+            Card content is most important part of card which have things like
+            card-title, description, ratings, prices, etc things.
+          </div>
+          <p class="title title-sm">card-footer</p>
+          <div>
+            Card footer is main section where most of your call-to-action
+            functionality comes. For example, Add-to-card, buy-now, subscribe
+            etc. We can add buttons and Icons in this section.
+          </div>
+          <hr />
+          <p class="title">Basic Card</p>
+          <p>
+            This is Basic card having title, subtitle, ratings, price on it.
+          </p>
+          <div class="flex-container classic-bg-color pd-1">
+            <div class="card">
+              <!-- cart media  -->
+              <div class="card-media">
+                <img class="responsive-img" src="https://picsum.photos/200" />
+              </div>
+              <!-- cart content  -->
+              <div class="card-content">
+                <span class="title"> Chrome-book 500 </span>
+                <span class="subtitle"> powered by Google </span>
+                <div class="card-description">
+                  <div class="rating">
+                    <span class="material-icons md-18 rated"> star_rate </span>
+                    <span class="material-icons md-18 rated"> star_rate </span>
+                    <span class="material-icons md-18 rated"> star_rate </span>
+                    <span class="material-icons md-18"> star_rate </span>
+                    <span class="material-icons md-18"> star_rate </span>
+                  </div>
+                  <span>Price : <del>$500</del> &ensp; $455 </span>
+                </div>
+              </div>
+              <!-- cart footer-->
+              <div class="card-footer">
+                <button class="btn btn-secondary-outline">
+                  <span class="material-icons md-18"> shopping_cart </span>
+                  Add to cart
+                </button>
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fc25476ab14d0015c32de5"
+              style="width: 100%; height: 400px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+
+          <p class="title">Card with header</p>
+          <p>
+            This card with have <span class="secondary-text">card-header</span>.
+          </p>
+          <div class="flex-container classic-bg-color pd-1">
+            <!-- card with header -->
+            <div class="card">
+              <!-- card- header -->
+              <div class="card-header">
+                <span class="title"> One Plus 9T</span>
+                <span class="subtitle"> powered by oneplus </span>
+              </div>
+              <!-- media div -->
+              <div class="card-media">
+                <img class="responsive-img" src="https://picsum.photos/200" />
+              </div>
+              <!-- content div -->
+              <div class="card-content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+                <span>
+                  <strong> Price :</strong> <del>$500</del> &ensp; $455
                 </span>
-            <span>Success: Operation Successful!</span>
-          </div>
-      
-    
-         </div>
+              </div>
+              <!-- buttons div -->
 
-         <div class="code-box">
-          <iframe src="https://www.thiscodeworks.com/embed/61fade70b783be0015bbaf59" style="width: 100%; height: 437px;" frameborder="0"></iframe>
-         </div>
+              <div class="card-footer">
+                <button class="btn btn-secondary-outline">
+                  <span class="material-icons md-18"> shopping_cart </span>
+                  Add to cart
+                </button>
+                <button class="btn btn-primary">
+                  Buy Now
+                  <span class="material-icons md-18"> shopping_bag </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fc26c56ab14d0015c32de7"
+              style="width: 100%; height: 400px"
+              frameborder="0"
+            ></iframe>
+          </div>
+
+          <hr />
+
+          <p class="title">Card with text Overlay</p>
+          <p>
+            To add overlay to entire card , add extra div at the end of the card
+            which has a class <span class="primary-text">overlay-content</span>,
+            which has <span class="primary-text">overlay-text</span>.
+            Overlay-content has been given positions which set on the card after
+            hovering on it.
+          </p>
+          <div class="flex-container classic-bg-color pd-1">
+            <!-- card-overlay -->
+            <div class="card">
+              <!-- media div -->
+              <div class="card-media">
+                <img class="" src="https://picsum.photos/200" />
+              </div>
+              <!-- content div -->
+              <div class="card-content">
+                <span class="title"> Chrome-book 500 </span>
+                <span class="subtitle"> powered by Google </span>
+                <p class="card-description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+                <span>Price : <del>$500</del> $455 </span>
+              </div>
+
+              <!-- buttons div -->
+              <div class="card-footer">
+                <button class="btn btn-secondary-outline">
+                  <span class="material-icons md-18"> shopping_cart </span>
+                  Add to cart
+                </button>
+                <button class="btn btn-primary-outline">
+                  Buy Now
+                  <span class="material-icons md-18"> shopping_bag </span>
+                </button>
+              </div>
+
+              <div class="overlay-content gray-bg-color">
+                <div class="overlay-text light-text">Out of Stock</div>
+                <button class="btn btn-secondary btn-large">Remind me!</button>
+              </div>
+            </div>
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fc298d6ab14d0015c32deb"
+              style="width: 100%; height: 500px"
+              frameborder="0"
+            ></iframe>
+          </div>
+
+          <hr />
+
+          <p class="title">Card with Dismis</p>
+          <p>
+            This card will have icon at top-right corner of the card. We need to
+            add on extra <span class="primary-text">div</span> at the end of the
+            card which has a class
+            <span class="secondary-text">card-dismis</span>.
+          </p>
+          <div class="flex-container classic-bg-color pd-1">
+            <!-- card with dismis -->
+            <div class="card">
+              <!-- media  -->
+              <div class="card-media">
+                <img class="responsive-img" src="https://picsum.photos/200" />
+              </div>
+              <!-- content  -->
+              <div class="card-content">
+                <span class="title"> Chrome-book 500 </span>
+                <span class="subtitle"> powered by Google </span>
+                <p class="card-description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+                <span>Price : <del>$500</del> &ensp; $455 </span>
+              </div>
+              <!-- footer  -->
+              <div class="card-footer">
+                <button class="btn btn-secondary-outline">
+                  <span class="material-icons md-18"> shopping_cart </span>
+                  Add to cart
+                </button>
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+
+              <div class="card-dismis light-bg-color">
+                <span class="material-icons"> close </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fc2b506ab14d0015c32dee"
+              style="width: 100%; height: 450px"
+              frameborder="0"
+            ></iframe>
+          </div>
+
+          <hr />
+
+          <p class="title">Card with badges</p>
+          <p>
+            We have seen badges component but for card we will be using
+            different types of badges. Here, we will have one extra div where
+            class will be <span class="primary-text">card-badge</span>, in which
+            we can give text or icons.
+          </p>
+          <div class="flex-container pd-1">
+            <div class="card">
+              <!-- media -->
+              <div class="card-media">
+                <img class="responsive-img" src="https://picsum.photos/200" />
+              </div>
+              <!-- content -->
+              <div class="card-content">
+                <span class="title"> Chrome-book 500 </span>
+                <span class="subtitle"> powered by Google </span>
+                <p class="card-description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+                <span>Price : <del>$500</del> &ensp; $455 </span>
+              </div>
+              <!-- footer -->
+              <div class="card-footer">
+                <button class="btn btn-secondary-outline">
+                  <span class="material-icons md-18"> shopping_cart </span>
+                  Add to cart
+                </button>
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+              <!-- badge -->
+              <div class="card-badge danger-bg-color light-text">
+                <span class=""> New </span>
+              </div>
+            </div>
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fc31ac6ab14d0015c32e01"
+              style="width: 100%; height: 450px"
+              frameborder="0"
+            ></iframe>
+          </div>
+
+          <hr />
+          <p class="title">Text-only card</p>
+          <p>This card only have content withou images</p>
+          <div class="flex-container pd-1 classic-bg-color">
+            <div class="card">
+              <!-- card- header -->
+              <div class="card-header">
+                <span class="title">Welcome to MyPage</span>
+                <span class="subtitle"> Amazing solution for everything </span>
+              </div>
+
+              <!-- cotent content  -->
+              <div class="card-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  quas velit ratione aliquid reprehenderit, modi mollitia libero
+                  dolores.
+                </p>
+              </div>
+
+              <!--  footer -->
+              <div class="card-footer primary-text">
+                Invite Your friends
+                <span class="material-icons md-18"> share </span>
+              </div>
+            </div>
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fc323c6ab14d0015c32e02"
+              style="width: 100%; height: 320px"
+              frameborder="0"
+            ></iframe>
+          </div>
+
+          <hr />
+          <p class="title">Horizontal card</p>
+          <p>
+            This card has different semantic and structure compare to other
+            cards.
+          </p>
+          <p>
+            It has a class called
+            <span class="secondary-text">card-horizontal</span> and its
+            structure is also different, because it has
+            <span class="secondary-text">card-horizontal-top</span> which shows
+            content part of a card.
+          </p>
+          <div class="flex-container pd-1">
+            <div class="card card-horizontal">
+              <!-- media div -->
+              <div class="card-horizontal-top">
+                <div class="card-media">
+                  <img class="" src="https://picsum.photos/200" />
+                </div>
+                <!-- content div -->
+                <div class="card-content">
+                  <span class="title"> Chrome-book 500 </span>
+                  <span class="subtitle"> powered by Google </span>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>Price : <del>$500</del>   $455 </span>
+                </div>
+              </div>
+              <!-- buttons div -->
+              <div class="card-footer">
+                <button class="btn btn-secondary-outline">
+                  <span class="material-icons md-18"> shopping_cart </span>
+                  Add to cart
+                </button>
+                <button class="btn btn-primary-outline">
+                  Buy Now
+                  <span class="material-icons md-18"> shopping_bag </span>
+                </button>
+              </div>
+
+              <div class="card-badge danger-bg-color light-text">
+                <span class=""> New </span>
+              </div>
+            </div>
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fc33756ab14d0015c32e03"
+              style="width: 100%; height: 450px"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+
+        <div id="image">Image</div>
+        <div id="input">Input</div>
+        <div id="toast">Toast</div>
+        <div id="list">List</div>
       </div>
-
-      <div id="badge">
-        <h2>Badges</h2>
-        <p>Badges are circled element on top-right or bottom-right corner of any element. They shows notification status, online/offline status and many other use cases.</p>
-        <hr>
-
-        <p class="title">Badge with icons</p>
-        <p>In <strong>div</strong> element, by specifying one icon and other one as span element with classes <span class="secondary-text">badge , badge-round </span> we can create a badge with icon.</p>
-
-        <p>Normal badge element with class <span class="primary-text">badge</span> will create badge with curved corners.</p>
-        <p>Rounded badge need a class <span class="primary-text">badge-round</span> along with class badge.</p>
-
-        <div class=" flex-container classic-bg-color pd-1">
-          <div>
-            <span class="material-icons md-48"> email </span>
-            <span class="badge  danger-bg-color">new</span>
-          </div>
-          <div>
-            <span class="material-icons md-48"> error </span>
-            <span class="badge badge-round danger-bg-color">5</span>
-          </div>
-        </div>
-
-        <div class="code-box">
-          <iframe src="https://www.thiscodeworks.com/embed/61faeaf7b783be0015bbaf67" style="width: 100%; height: 203px;" frameborder="0"></iframe>
-        </div>
-        <hr>
-
-        <p class="title">Badge with Text</p>
-        <p>As above , Text will also have badge which shows a status and numbers on it.</p>
-        <div class="flex-container classic-bg-color pd-1">
-          <div>
-            random text
-            <span class="badge badge-round primary-bg-color">5</span>
-          </div>
-        </div>
-
-        <div class="code-box">
-          <iframe src="https://www.thiscodeworks.com/embed/61faec47b783be0015bbaf69" style="width: 100%; height: 138px;" frameborder="0"></iframe>
-        </div>
-
-        <hr>
-        <p class="title">Badge with avatar</p>
-        <p>Badges on avatar shows status as online or offline of the user.</p>
-        <li>Element<strong> div </strong> with class <span class="secondary-text">badge-with-avatar.</span></li>
-        <li>It will have two part, one with <strong>
-          img 
-        </strong>
-        tag and other one is <strong>
-          span 
-        </strong>
-        tag .</li>
-        <li>Image will have class with avatar and span with have <span class="primary-text">badge & badge-round</span> class on it.</li>
-        <p>You can change the color of badge depend on user's status.</p>
-
-        <div class="flex-container classic-bg-color pd-1">
-          <div class="badge-with-avatar">
-            <img
-              class="avatar-md"
-              src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
-            />
-            <span class="badge badge-round secondary-bg-color"></span>
-          </div>
-          <div class="badge-with-avatar">
-            <img
-              class="avatar-md"
-              src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
-            />
-            <span class="badge badge-round success-bg-color"></span>
-          </div>
-          <div class="badge-with-avatar">
-            <img
-              class="avatar-md"
-              src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
-            />
-            <span class="badge badge-round gray-bg-color"></span>
-          </div>
-        </div>
-
-        <div class="code-box">
-          <iframe src="https://www.thiscodeworks.com/embed/61faefc5b783be0015bbaf6d" style="width: 100%; height: 190px;" frameborder="0"></iframe>
-        </div>
-
-
-
-
-
-
-      </div>
-      <div id="button">
-        <h2>Buttons</h2>
-        <p>
-          Buttons are very important aspect of any website. We provide diversity of buttons , from which user can take action and make choices.  
-        </p>
-        <hr>
-        <p class="title">Normal Buttons</p>
-        <p>Use class <span class="secondary-text">btn</span> along with <span class="secondary-text">btn-variant</span>.</p>
-        
-        <div class="flex-container classic-bg-color pd-1">
-          <button class="btn btn-primary">Primary</button>
-          <button class="btn btn-secondary">Secondary</button>
-          <button class="btn btn-ternary">Ternary</button>
-          <button class="btn btn-success">Success</button>
-          <button class="btn btn-warning">Warning</button>
-          <button class="btn btn-danger">Danger</button>
-          <button class="btn btn-dark">Dark</button>
-          <a class="btn btn-link light-bg-color" href="#">Link</a>
-        </div>
-
-      
-
-        <div class="code-box">
-          <iframe src="https://www.thiscodeworks.com/embed/61fbdd4d6ab14d0015c32d66" style="width: 100%; height: 190px;" frameborder="0"></iframe>
-        </div>
-        <hr>
-
-        <p class="title">Outline Buttons</p>
-        <p>Sometimes, we need buttons which are more likely to have animation and which looks good when we hover. That where outline buttons comes into play.</p>
-        <p>We can add class <span class="secondary-text">btn-variant-outline</span> on buttons to make button outlined.</p>
-
-        <div class="flex-container classic-bg-color pd-1">
-          <button class="btn btn-primary-outline">Primary</button>
-          <button class="btn btn-secondary-outline">Secondary</button>
-          <button class="btn btn-ternary-outline">Ternary</button>
-          <button class="btn btn-success-outline">Success</button>
-          <button class="btn btn-warning-outline">Warning</button>
-          <button class="btn btn-danger-outline">Danger</button>
-          <button class="btn btn-dark-outline">Dark</button>
-        </div>
-        <!--  -->
-  
-        <div class="code-box">
-          <iframe src="https://www.thiscodeworks.com/embed/61fbe1176ab14d0015c32d6b" style="width: 100%; height: 200px;" frameborder="0"></iframe>
-        </div>
-        <hr>
-
-        <p class="title">Large Buttons</p>
-        <p>Large Buttons are very useful for call-to-action which grabs attentions. </p>
-        <p>Adding class <span class="secondary-text">btn-large</span> will make button large.</p>
-
-        <div class="flex-container classic-bg-color pd-1">
-          <button class="btn btn-primary-outline btn-large">Primary</button>
-          <button class="btn btn-secondary btn-large">Secondary</button>
-          <button class="btn btn-success-outline btn-large">Success</button>
-          <button class="btn btn-warning btn-large">Warning</button>
-        </div>
-
-        <div class="code-box">
-          <iframe src="https://www.thiscodeworks.com/embed/61fbe9f96ab14d0015c32d81" style="width: 100%; height: 100px;" frameborder="0"></iframe>
-        </div>
-
-        
-
-        <hr>
-
-        <p class="title">Small Buttons</p>
-        <p>Small buttons are interesting to use with small screen and using along with inline element.</p>
-        <p>Adding class <span class="secondary-text">btn-small</span> on normal button will make that button small.</p>
-
-        <div class="flex-container classic-bg-color pd-1">
-          <button class="btn btn-primary-outline btn-small">Primary</button>
-          <button class="btn btn-secondary btn-small">Secondary</button>
-          <button class="btn btn-success-outline btn-small">Danger</button>
-        </div>
-
-        <div class="code-box">
-          <iframe src="https://www.thiscodeworks.com/embed/61fbeba86ab14d0015c32d85" style="width: 100%; height: 125px;" frameborder="0"></iframe>
-        </div>
-        <hr>
-
-        <p class="title"> Block Button</p>
-        <p>Block buttons are basically, large buttons with 100% of width inherited from parent element.</p>
-        <p>Add class <span class="secondary-text">btn-block</span> to regular buttonsto make button block. </p>
-        <div class="flex-container classic-bg-color pd-1">
-          <button class="btn btn-primary btn-block">Primary</button>
-          <button class="btn btn-secondary-outline btn-block">Secondary</button>
-        </div>
-
-        <div class="code-box">
-          <iframe src="https://www.thiscodeworks.com/embed/61fbed5e6ab14d0015c32d86" style="width: 100%; height: 112px;" frameborder="0"></iframe>
-        </div>
-
-        <hr>
-        <p class="title">Disabled Buttons</p>
-        <p>It is important to restrict users at some place. For example, when user try to login and after clicking on login button, you want user not to click that button again for sometime. Thats where disabled buttons coms into play.</p>
-        <p>We are not using any specific class to make button disabled, instead you can directly give <span class="primary-text">disabled</span> atrribute to make button disbaled.</p>
-
-        <div class="flex-container classic-bg-color pd-1">
-          <button disabled class="btn btn-primary light-text">Primary</button>
-          <button disabled class="btn btn-secondary">Secondary</button>
-          <button disabled class="btn btn-danger-outline">Danger</button>
-        </div>
-
-        <div class="code-box">
-          <iframe src="https://www.thiscodeworks.com/embed/61fc01f26ab14d0015c32d95" style="width: 100%; height: 164px;" frameborder="0"></iframe>
-        </div>
-
-        <hr>
-
-        <p class="title">Floating action Buttons</p>
-        <p>A floating action button (FAB) represents the primary action of a screen.</p>
-        <p>Depending on requirement, you can chnage the position of class <span class="secondary-text">btn-float</span> to fixed or relative. </p>
-        <div class="flex-container classic-bg-color pd-1">
-          <button class="btn btn-secondary btn-float">
-            <i class="material-icons">add</i>
-          </button>
-          <button class="btn btn-danger-outline btn-float">
-            <i class="material-icons">delete</i>
-          </button>
-          <button class="btn btn-warning btn-float">
-            <i class="material-icons">edit</i>
-          </button>
-        </div>
-
-        <div class="code-box">
-          <iframe src="https://www.thiscodeworks.com/embed/61fc06df6ab14d0015c32d9e" style="width: 100%; height: 229px;" frameborder="0"></iframe>
-        </div>
-        <hr>
-        <p class="title">Buttons with Icons</p>
-        <p>It is common to have Buttons which have icons and text. </p>
-        <p>For that, we will using <span class="primary-color">icons</span> inside buttons beside of text. </p>
-
-        <div class="flex-container classic-bg-color pd-1">
-          <button class="btn btn-primary-outline">
-            Create new 
-            <i class="material-icons">add</i>
-          </button>
-          <button class="btn btn-danger-outline">
-            Remove
-            <i class="material-icons">delete</i>
-          </button>
-        </div>
-
-        <div class="code-box">
-          <iframe src="https://www.thiscodeworks.com/embed/61fc08306ab14d0015c32d9f" style="width: 100%; height: 203px;" frameborder="0"></iframe>
-        </div>
-        <hr>
-      </div>
-
-      
-      <div id="card">Cards</div>
-      <div id="image">Image</div>
-      <div id="input">Input</div>
-      <div id="toast">Toast</div>
-      <div id="list">List</div>
     </div>
-  </div>
 
-
-
-
-
-
-  <script src="./documenation.js"></script>
-
-</body>
-
+    <script src="./documenation.js"></script>
+  </body>
 </html>
