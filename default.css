@@ -129,7 +129,6 @@ body {
     background: var(--bg-color);
     font-family: "Poppins", sans-serif;
     line-height: 1.4rem;
-    /* width: 100vw; */
 }
 
 a{

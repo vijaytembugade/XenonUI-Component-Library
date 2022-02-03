@@ -21,32 +21,90 @@ window.addEventListener("resize", () => {
 
 //show and hide 
 $(document).ready(function () {
+  $("#introduction").show();
   $("#avatar").hide();
-  $("#alert").show();
+  $("#alert").hide();
   $("#badge").hide();
+  $("#card").hide();
+  $("#color").hide();
+  $("#typography").hide();
+  $("#button").hide();
+  $("#image").hide();
+  $("#toast").hide();
+  $("#list").hide();
+  $("#input").hide();
 
+  $("#introduction-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#introduction").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#introduction').siblings().hide()
+  });
+  $("#color-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#color").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#color').siblings().hide()
+  });
+  $("#typography-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#typography").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#typography').siblings().hide()
+  });
   $("#avatar-id").click(function () {
     $(this).addClass("bold-text")
     $("#avatar").slideDown(500);
     $(this).siblings().removeClass("bold-text")
     $('#avatar').siblings().hide()
   });
-
-
-  $("#badge-id").click(function () {
-    $(this).addClass("bold-text")
-    $("#badge").slideDown(500);
-    $(this).siblings().removeClass("bold-text")
-    $('#badge').siblings().hide()
-  });
-
-
   $("#alert-id").click(function () {
+    $(this).addClass("bold-text")
     $("#alert").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
     $('#alert').siblings().hide()
+  });
+  $("#badge-id").click(function () {
+    $("#badge").slideDown(500);
+    $('#badge').siblings().hide()
     $(this).addClass("bold-text")
     $(this).siblings().removeClass("bold-text")
   });
-
+  $("#button-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#button").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#button').siblings().hide()
+  });
+  $("#card-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#card").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#card').siblings().hide()
+  });
+  $("#image-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#image").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#image').siblings().hide()
+  });
+  $("#input-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#input").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#input').siblings().hide()
+  });
+  $("#toast-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#toast").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#toast').siblings().hide()
+  });
+  $("#list-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#list").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#list').siblings().hide()
+  });
 });
 
