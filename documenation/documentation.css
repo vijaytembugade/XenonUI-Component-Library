@@ -38,6 +38,10 @@
   flex-direction: column;
 }
 
+.main-content p{
+  text-align: justify;
+}
+
 .code-box {
     margin:2rem 0rem ;
 }

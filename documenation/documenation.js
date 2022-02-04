@@ -21,7 +21,7 @@ window.addEventListener("resize", () => {
 
 //show and hide 
 $(document).ready(function () {
-  $("#introduction").show();
+  $("#introduction").hide();
   $("#avatar").hide();
   $("#alert").hide();
   $("#badge").hide();
@@ -30,9 +30,9 @@ $(document).ready(function () {
   $("#typography").hide();
   $("#button").hide();
   $("#image").hide();
+  $("#input").show();
   $("#toast").hide();
   $("#list").hide();
-  $("#input").hide();
 
   $(".sidebar").on("click", "div", ()=>{
     window.scrollTo(0, 0);
