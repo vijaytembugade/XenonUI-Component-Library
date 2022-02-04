@@ -34,6 +34,10 @@ $(document).ready(function () {
   $("#list").hide();
   $("#input").hide();
 
+  $(".sidebar").on("click", "div", ()=>{
+    window.scrollTo(0, 0);
+  })
+
   $("#introduction-id").click(function () {
     $(this).addClass("bold-text")
     $("#introduction").slideDown(500);

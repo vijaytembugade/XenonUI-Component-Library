@@ -82,6 +82,7 @@ video {
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 
@@ -285,6 +286,7 @@ h6 {
     gap: 2rem;
     flex-wrap: wrap;
     text-align: justify;
+    z-index: -3;
 
 }
 

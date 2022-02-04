@@ -45,7 +45,6 @@
 }
 
 /* card header */
-
 .card-header {
   padding: 1rem 0.5rem 0.5rem;
   display: flex;
@@ -63,7 +62,7 @@
 
 .card-media img {
   width: 100%;
-  height: 12.5rem;
+  height: 12rem;
   object-fit: fit-content;
   border-radius: 0.2rem;
 }
@@ -72,16 +71,20 @@
 .card-content {
   display: flex;
   flex-direction: column;
-  max-height: 10rem;
-  min-width: 8.75rem;
+  min-height: 10rem;
+  min-width: 9rem;
   padding: 1rem 2rem;
   height: fit-content;
 }
 
 .card-description {
-  height: 3rem;
+  padding:0rem;
+  max-height: 3rem;
   text-overflow: ellipsis;
+  line-height: 1rem;
+  margin: 1rem 0px;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* text over media card */
@@ -102,7 +105,7 @@
 }
 
 /* close card */
-.card-dismis {
+.card-dismiss {
   width: fit-content;
   border-radius: 50%;
   position: absolute;
@@ -124,13 +127,13 @@
 
 .card-badge::before {
   position: absolute;
-  content: "";
+  content: "Hello";
   background: inherit;
   height: 28px;
   width: 28px;
   top: 1.5rem;
   left: 0.4rem;
-  z-index: -1;
+  z-index: -2;
   transform: rotate(45deg);
 }
 
