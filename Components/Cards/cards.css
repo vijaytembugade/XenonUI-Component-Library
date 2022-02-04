@@ -105,7 +105,7 @@
 }
 
 /* close card */
-.card-dismis {
+.card-dismiss {
   width: fit-content;
   border-radius: 50%;
   position: absolute;
