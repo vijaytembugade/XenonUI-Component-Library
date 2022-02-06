@@ -15,7 +15,6 @@
 }
 
 .main-logo::first-letter {
-  color: #9370db;
   font-size: 9rem;
 }
 
@@ -29,7 +28,6 @@
 }
 
 .design-text {
-  color: #f0739d;
   font-size: 9rem;
 }
 
@@ -43,11 +41,9 @@
     font-size: 4rem;
   }
   .main-logo::first-letter {
-    color: #9370db;
     font-size: 5rem;
   }
   .design-text {
-    color: #f0739d;
     font-size: 5rem;
   }
 }
@@ -56,11 +52,9 @@
     font-size: 1.5rem;
   }
   .main-logo::first-letter {
-    color: #9370db;
     font-size: 2rem;
   }
   .design-text {
-    color: #f0739d;
     font-size: 2rem;
   }
 
