@@ -195,4 +195,10 @@
   .btn{
     font-size: 1rem;
   }
+
+  .btn-large {
+    padding: 0.5rem 1rem;
+    min-width: 7rem;
+    font-size: 1.2rem;
+  }
 }
