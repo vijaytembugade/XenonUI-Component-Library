@@ -36,13 +36,13 @@ $(document).ready(function () {
     toast.classList.add("hidden");
   })
 
-  $("#introduction").hide();
-  $("#avatar").show();
+  $("#introduction").show();
+  $("#color").hide();
+  $("#typography").hide();
+  $("#avatar").hide();
   $("#alert").hide();
   $("#badge").hide();
   $("#card").hide();
-  $("#color").hide();
-  $("#typography").hide();
   $("#button").hide();
   $("#image").hide();
   $("#input").hide();
