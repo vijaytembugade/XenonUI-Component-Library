@@ -1,6 +1,6 @@
 
 //show and hide 
-$(document).ready(function () {
+$(function () {
   // navabar javascript
 
   const hamburger = document.querySelector("#hamburger");
@@ -24,16 +24,13 @@ $(document).ready(function () {
   //show aand hide toast
   const showToast = document.querySelector("#showToast");
   const toast = document.querySelector(".toast");
-  let toastBoolean = false;
   showToast.addEventListener("click", () => {
     toast.classList.toggle("hidden");
-    showToast.innerText = toastBoolean ? "show toast" : "hide toast";
-    toastBoolean = !toastBoolean;
   });
 
   const closeToast = document.querySelector(".close-toast")
   closeToast.addEventListener("click", () => {
-    toast.classList.add("hidden");
+    toast.classList.toggle("hidden");
   })
 
   $("#introduction").show();
