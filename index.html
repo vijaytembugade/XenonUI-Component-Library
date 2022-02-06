@@ -1,97 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Xenon</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-    </script>
+
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./Components/Navbar/navbar.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./default.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./Components/Buttons/buttons.css" />
+    <link rel="stylesheet" href="./Components/Navbar/navbar.css" />
+  </head>
+  <body>
     <nav class="text-dark">
+      <!-- nav brand  -->
+      <div class="nav-brand">
+        <img src="./Xenon.svg" alt="Xenon" />
+      </div>
 
-        <!-- nav brand  -->
-        <div class="nav-brand">
-          <img src="../Xenon.svg" alt="Xenon" />
+      <!-- nav-item on right side  -->
+      <a href="./index.html" class="nav-item"> Home </a>
+      <a href="./documenation/documentation.html" class="nav-item"
+        >Documentation</a
+      >
+
+      <div id="hamburger" class="hamburger">
+        <span class="material-icons md-36"> menu </span>
+      </div>
+
+      <div class="responsive-navbar">
+        <div id="closeNavbar" class="danger-text">
+          <span class="material-icons md-36"> close </span>
+          Close
         </div>
-    
-        <!-- nav-item on right side  -->
-        <a href="" class="nav-item"> Home </a>
-        <a href="" class="nav-item">Documentation</a>
-    
-        <div id="hamburger" class="hamburger">
-          <span class="material-icons md-36"> menu </span>
-        </div>
-    
-        <div class="responsive-navbar">
-          <div id="closeNavbar" class="danger-text">
-            <span class="material-icons md-36"> close </span>
-            Close
-          </div>
-          <a href="" class="nav-item"> Home </a>
-          <a href="" class="nav-item">Documentation</a>
-        </div>
-      </nav>
-    <a href="./documenation/documentation.html">Documentation</a><br/>
-    <a href="./Components/Avatar/avatar.html" class="">
-        Avatar
-    </a>
-    <br>
-
-    <a href="./Components/Badge/badge.html" class="">
-        Badge
-    </a>
-    <br>
-
-    <a href="./Components/Alerts/alerts.html" class="">
-        Alerts
-    </a>
-    <br/>
-
-    <a href="./Components/Buttons/buttons.html" class="">
-        Buttons
-    </a>
-    <br/>
-
-    <a href="./Components/Cards/cards.html" class="">
-        Cards
-    </a>
-    <br/>
-    <a href="./Components/Images/image.html" class="">
-        Images
-    </a>
-    <br/>
-    <a href="./Components/Inputs/inputs.html" class="">
-        Inputs
-    </a>
-    <br/>
-    <a href="./Components/Text Utilities/text_utilities.html" class="">
-        Text Utilities 
-    </a>
-    <br/>
-    <a href="./Components/Lists/list.html" class="">
-        List
-    </a>
-    <br/>
-    <a href="./Components/Navbar/navbar.html" class="">
-        Navabar
-    </a>
-    <br/>
-    <a href="./Components/Rating/rating.html" class="">
-        Rating
-    </a>
-    <br/>
-    <a href="./Components/Toast/toast.html" class="">
-        Toast
-    </a>
-    <br/>
-    
-
-</body>
+        <a href="./index.html" class="nav-item"> Home </a>
+        <a href="./documenation/documentation.html" class="nav-item"
+          >Documentation</a
+        >
+      </div>
+    </nav>
+    <div class="landing-page">
+      <span class="main-logo">
+        <span class="primary-text">X</span>enon-<span
+          class="design-text secondary-text"
+          >D</span
+        >esigns
+      </span>
+      <div class="tag-line">
+        Xenon-designs is CSS component Library having coherent, practical and
+        convenient functionalities to build modern web apps.
+      </div>
+      <div class="motto">
+        Design <span class="primary-text">Today</span> for
+        <span class="secondary-text">Tomorrow!</span>
+      </div>
+      <div class="action-buttons">
+        <a
+          href="./documenation/documentation.html"
+          class="btn btn-large btn-secondary"
+          >Get Started</a
+        >
+        <a
+          href="https://github.com/vijaytembugade/XenonUI-Component-Library"
+          class="btn btn-large btn-primary-outline"
+        >
+            Github 
+        </a>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./documenation/documentation.js" defer></script>
+  </body>
 </html>
