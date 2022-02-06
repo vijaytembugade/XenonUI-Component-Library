@@ -24,12 +24,12 @@ $(function () {
   //show aand hide toast
   const showToast = document.querySelector("#showToast");
   const toast = document.querySelector(".toast");
-  showToast.addEventListener("click", () => {
+  showToast && showToast.addEventListener("click", () => {
     toast.classList.toggle("hidden");
   });
 
   const closeToast = document.querySelector(".close-toast")
-  closeToast.addEventListener("click", () => {
+  closeToast && closeToast.addEventListener("click", () => {
     toast.classList.toggle("hidden");
   })
 
@@ -47,6 +47,7 @@ $(function () {
   $("#list").hide();
 
   $(".sidebar").on("click", "div", () => {
+    console.log(this)
     window.scrollTo(0, 0);
   })
 
