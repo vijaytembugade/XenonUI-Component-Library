@@ -3,7 +3,7 @@
 .doc-container {
   display: flex;
   justify-content: center;
-  margin:6rem;
+  margin: 6rem;
   position: relative;
 }
 
@@ -17,7 +17,7 @@
   flex-direction: column;
   height: 100vh;
   scroll-margin-block: 10rem;
-  transition: all 0.5s
+  transition: all 0.5s;
 }
 
 .sidebar > div {
@@ -38,13 +38,22 @@
   flex-direction: column;
 }
 
-.main-content p{
+.main-content p {
   text-align: justify;
 }
 
 .code-box {
-    margin:2rem 0rem ;
+  margin: 2rem 0rem;
 }
 
-
-
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .doc-container {
+    display: flex;
+    justify-content: center;
+    margin: 6rem 2rem 2rem;
+    position: relative;
+  }
+}

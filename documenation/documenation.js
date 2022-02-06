@@ -1,43 +1,43 @@
 
-// navabar javascript
-
-const hamburger = document.querySelector("#hamburger");
-const responsiveNavbar = document.querySelector(".responsive-navbar");
-const closeNavbar = document.querySelector("#closeNavbar");
-
-hamburger.addEventListener("click", () => {
-  responsiveNavbar.style.display = "flex";
-});
-
-closeNavbar.addEventListener("click", () => {
-  responsiveNavbar.style.display = "none";
-});
-
-window.addEventListener("resize", () => {
-  if (window.outerWidth > 768) {
-    responsiveNavbar.style.display = "none";
-  }
-})
-
-//show aand hide toast
-const showToast = document.querySelector("#showToast");
-const toast = document.querySelector(".toast");
-let toastBoolean = false;
-showToast.addEventListener("click", () => {
-  toast.classList.toggle("hidden");
-  showToast.innerText = toastBoolean ? "show toast" : "hide toast";
-  toastBoolean = !toastBoolean;
-});
-
-const closeToast = document.querySelector(".close-toast")
-closeToast.addEventListener("click", () =>{
-    toast.classList.add("hidden");
-})
-
 //show and hide 
 $(document).ready(function () {
+  // navabar javascript
+
+  const hamburger = document.querySelector("#hamburger");
+  const responsiveNavbar = document.querySelector(".responsive-navbar");
+  const closeNavbar = document.querySelector("#closeNavbar");
+
+  hamburger.addEventListener("click", () => {
+    responsiveNavbar.style.display = "flex";
+  });
+
+  closeNavbar.addEventListener("click", () => {
+    responsiveNavbar.style.display = "none";
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.outerWidth > 768) {
+      responsiveNavbar.style.display = "none";
+    }
+  })
+
+  //show aand hide toast
+  const showToast = document.querySelector("#showToast");
+  const toast = document.querySelector(".toast");
+  let toastBoolean = false;
+  showToast.addEventListener("click", () => {
+    toast.classList.toggle("hidden");
+    showToast.innerText = toastBoolean ? "show toast" : "hide toast";
+    toastBoolean = !toastBoolean;
+  });
+
+  const closeToast = document.querySelector(".close-toast")
+  closeToast.addEventListener("click", () => {
+    toast.classList.add("hidden");
+  })
+
   $("#introduction").hide();
-  $("#avatar").hide();
+  $("#avatar").show();
   $("#alert").hide();
   $("#badge").hide();
   $("#card").hide();
@@ -47,9 +47,9 @@ $(document).ready(function () {
   $("#image").hide();
   $("#input").hide();
   $("#toast").hide();
-  $("#list").show();
+  $("#list").hide();
 
-  $(".sidebar").on("click", "div", ()=>{
+  $(".sidebar").on("click", "div", () => {
     window.scrollTo(0, 0);
   })
 
