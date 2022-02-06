@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="../Components/Alerts/alerts.css" />
     <link rel="stylesheet" href="../Components/Badge/badge.css" />
     <link rel="stylesheet" href="../Components/Cards/cards.css" />
+    <link rel="stylesheet" href="../Components/Images/image.css" />
+    <link rel="stylesheet" href="../Components/Inputs/inputs.css" />
     <link
       rel="stylesheet"
       href="../Components/Text Utilities/text_utilities.css"
@@ -743,9 +745,9 @@
 
           <p class="title">Card with Dismiss</p>
           <p>
-            This card will have an icon at top-right corner of the card. We need to
-            add on extra <span class="primary-text">div</span> at the end of the
-            card which has a class
+            This card will have an icon at top-right corner of the card. We need
+            to add on extra <span class="primary-text">div</span> at the end of
+            the card which has a class
             <span class="secondary-text">card-dismiss</span>.
           </p>
           <div class="flex-container classic-bg-color pd-1">
@@ -926,8 +928,245 @@
           </div>
         </div>
 
-        <div id="image">Image</div>
-        <div id="input">Input</div>
+        <div id="image">
+          <h2>Images</h2>
+          <p>
+            Images are the important aspects of any website. HTML provides us
+            <span class="primary-text">img</span> tag with help of that we can
+            put images on web page.
+          </p>
+          <hr />
+          <p class="title">Responsive Image</p>
+          <p>
+            Responsive Image is a image which will have width and height
+            inherited from its parents element.Responsive Images are used to
+            dsiplay Images on websites, which are screen responsive.
+          </p>
+          <div class="image-container classic-bg-color pd-1">
+            <!-- use class responsive-img on img tag to make it responsive -->
+            <img class="responsive-img" src="https://picsum.photos/500" />
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fd40bf33c09d0015b44d93"
+              style="width: 100%; height: 125px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+          <p class="title">Rounded Image</p>
+          <p>
+            Round Images are circular images with border-radius 50% and its
+            width and height is inherited from its parents.
+          </p>
+          <div class="image-container pd-1">
+            <img
+              class="responsive-img rounded-img"
+              src="https://picsum.photos/500"
+            />
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fd450233c09d0015b44d9b"
+              style="width: 100%; height: 112px"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+        <div id="input">
+          <h2>Inputs</h2>
+          <p>
+            Inputs are most important part of any website. These input
+            components is a way for users to communicate with website. Inputs
+            are used to take informations from users and then we can process on
+            that inputs or store it in database.
+          </p>
+          <hr />
+          <p class="title">Label Inputs</p>
+          <p>
+            Labeled inputs fields are input field which content label at top of
+            it. These input field can be customised to show error or success
+            messages.
+          </p>
+          <div class="classic-bg-color pd-1">
+            <label>
+              <span class="input-label"> Enter your Name </span>
+              <input required type="text" />
+            </label>
+            <label>
+              <span class="input-label"> Enter your Password </span>
+              <input required type="password" />
+            </label>
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fd64b033c09d0015b44ddc"
+              style="width: 100%; height: 200px"
+              >frameborder="0"></iframe
+            >
+          </div>
+
+          <hr />
+          <p class="title">Disabled Inputs</p>
+          <p>
+            Disabled inputs are element where you want user to be restricted at
+            some fileds.
+          </p>
+          <div>
+            <label>
+              <span class="input-label"> Email </span>
+              <input
+                disabled
+                required
+                type="text"
+                placeholder="Disabled Input"
+              />
+            </label>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fd660933c09d0015b44de0"
+              style="width: 100%; height: 268px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+          <p class="title">Textarea</p>
+          <p>
+            The <span class="primary-text">textarea</span> tag defines a
+            multi-line text input control.
+          </p>
+          <div class="flex-container classic-bg-color pd-1">
+            <label>
+              <span for="input-label"> Introduce about yourself </span>
+              <textarea placeholder=""></textarea>
+            </label>
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fd780633c09d0015b44de7"
+              style="width: 100%; height: 164px"
+              frameborder="0"
+            ></iframe>
+          </div>
+
+          <hr />
+          <p class="title">Check box</p>
+          <p>
+            The <input type="checkbox" /> defines a checkbox. The checkbox is
+            shown as a square box that is ticked (checked) when activated.
+            Checkboxes are used to let a user select one or more options of a
+            limited number of choices.
+          </p>
+          <div class="flex-container classic-bg-color pd-1">
+            <label>
+              <input type="checkbox" />
+              <span class="input-label"> Accept </span>
+            </label>
+            <label>
+              <input checked type="checkbox" />
+              <span class="input-label"> Accept </span>
+            </label>
+            <label>
+              <input disabled type="checkbox" />
+              <span class="input-label"> Disabled </span>
+            </label>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fd7c0033c09d0015b44de8"
+              style="width: 100%; height: 346px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+
+          <p class="title">Radio Buttons</p>
+          <p>
+            The <input type="radio" /> defines a radio button. Radio buttons are
+            normally presented in radio groups (a collection of radio buttons
+            describing a set of related options). Only one radio button in a
+            group can be selected at the same time.
+          </p>
+          <div class="flex-container classic-bg-color pd-1">
+            <label>
+              <input type="radio" name="radio-button" />
+              Option 1
+            </label>
+            <label>
+              <input type="radio" name="radio-button" />
+              Option 2
+            </label>
+            <label>
+              <input type="radio" name="radio-button" />
+              Option 3
+            </label>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fd7e9133c09d0015b44deb"
+              style="width: 100%; height: 242px"
+              frameborder="0"
+            ></iframe>
+          </div>
+
+          <hr />
+          <p class="title">Form</p>
+          <p>
+            Form is an important input component which is used in validation &
+            authentication. It is also used in communication with server and
+            database.
+          </p>
+          <p>
+            We have class <span class="secondary-text">form-group</span> on form element. 
+            Also one <span class="primary-text">span</span> tag at end of the
+            form where we can show our validation error which have a class of
+            <span class="secondary-text">validation-error</span>.
+          </p>
+
+          <div class="flex-container pd-1">
+            <form class="form-group">
+              <h2>Sign in</h2>
+              <label>
+                <span class="input-label"> Username </span>
+                <input required type="text" />
+              </label>
+
+              <label>
+                <span class="input-label"> Email </span>
+                <input required type="email" />
+              </label>
+
+              <label>
+                <span class="input-label"> Password </span>
+                <input
+                  required
+                  minlength="5"
+                  type="password"
+                  placeholder="Password"
+                  class="input-error"
+                />
+              </label>
+              <span class="validation-error"
+                >Password should be minimum 5 character.</span
+              >
+              <button class="btn btn-primary">Sign In</button>
+            </form>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61fd805a33c09d0015b44def"
+              style="width: 100%; height: 411px"
+              frameborder="0"
+            ></iframe>
+          </div>
+
+        </div>
+
         <div id="toast">Toast</div>
         <div id="list">List</div>
       </div>

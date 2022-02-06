@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="../Buttons/buttons.css" />
     <link rel="stylesheet" href="../../default.css" />
     <link
-    href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body class="container flex-container-verticle">
     <h2>Default Input</h2>
     <!-- Default Input field -->
     <div class="form-container">
-      <label class="input-label" for="">
-        Enter your Name
+      <label>
+        <span class="input-label"> Enter your Name </span>
         <input required type="text" />
       </label>
       <label class="input-label" for="">
@@ -32,17 +32,18 @@
     <div class="form-container">
       <form class="form-group">
         <h2>Sign in</h2>
-        <label class="input-label" for="input">
-          Username
+        <label>
+          <span class="input-label"> Username </span>
           <input required type="text" />
         </label>
-        <label class="input-label">
-          Email
+
+        <label>
+          <span class="input-label"> Email </span>
           <input required type="email" />
         </label>
 
-        <label class="input-label" for="">
-          Password
+        <label>
+          <span class="input-label"> Password </span>
           <input
             required
             minlength="5"
@@ -54,9 +55,7 @@
         <span class="validation-error"
           >Password should be minimum 5 character.</span
         >
-        <button class="btn btn-primary">
-          Sign In
-        </button>
+        <button class="btn btn-primary">Sign In</button>
       </form>
     </div>
 

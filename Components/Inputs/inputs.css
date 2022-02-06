@@ -19,6 +19,8 @@
   width: 10rem;
 }
 
+
+
 input,
 textarea {
   display: inline-block;
@@ -47,18 +49,20 @@ input[type="radio"] {
 }
 
 textarea {
-  min-height: 180px;
+  min-height: 160px;
   display: block;
-  min-width: 360px;
-
+  width: 100%;
 }
 
 .input-label {
   display: inline-block;
-  margin: 0.25rem 0rem;
-  padding: 0.25rem;
+  margin: 5px 0px; 
+  padding: 5px 0px;
 }
 
+.input-label-text{
+  text-align: none;
+}
 .input-error {
   border: 1px solid var(--danger-color);
   outline: 1px solid var(--danger-color);
