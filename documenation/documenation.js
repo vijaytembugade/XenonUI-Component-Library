@@ -19,6 +19,21 @@ window.addEventListener("resize", () => {
   }
 })
 
+//show aand hide toast
+const showToast = document.querySelector("#showToast");
+const toast = document.querySelector(".toast");
+let toastBoolean = false;
+showToast.addEventListener("click", () => {
+  toast.classList.toggle("hidden");
+  showToast.innerText = toastBoolean ? "show toast" : "hide toast";
+  toastBoolean = !toastBoolean;
+});
+
+const closeToast = document.querySelector(".close-toast")
+closeToast.addEventListener("click", () =>{
+    toast.classList.add("hidden");
+})
+
 //show and hide 
 $(document).ready(function () {
   $("#introduction").hide();
@@ -30,9 +45,9 @@ $(document).ready(function () {
   $("#typography").hide();
   $("#button").hide();
   $("#image").hide();
-  $("#input").show();
+  $("#input").hide();
   $("#toast").hide();
-  $("#list").hide();
+  $("#list").show();
 
   $(".sidebar").on("click", "div", ()=>{
     window.scrollTo(0, 0);

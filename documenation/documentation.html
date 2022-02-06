@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="../Components/Cards/cards.css" />
     <link rel="stylesheet" href="../Components/Images/image.css" />
     <link rel="stylesheet" href="../Components/Inputs/inputs.css" />
+    <link rel="stylesheet" href="../Components/Toast/toast.css" />
+    <link rel="stylesheet" href="../Components/Lists/list.css" />
     <link
       rel="stylesheet"
       href="../Components/Text Utilities/text_utilities.css"
@@ -1121,10 +1123,10 @@
             database.
           </p>
           <p>
-            We have class <span class="secondary-text">form-group</span> on form element. 
-            Also one <span class="primary-text">span</span> tag at end of the
-            form where we can show our validation error which have a class of
-            <span class="secondary-text">validation-error</span>.
+            We have class <span class="secondary-text">form-group</span> on form
+            element. Also one <span class="primary-text">span</span> tag at end
+            of the form where we can show our validation error which have a
+            class of <span class="secondary-text">validation-error</span>.
           </p>
 
           <div class="flex-container pd-1">
@@ -1164,11 +1166,149 @@
               frameborder="0"
             ></iframe>
           </div>
-
         </div>
 
-        <div id="toast">Toast</div>
-        <div id="list">List</div>
+        <div id="toast">
+          <h2>Toast</h2>
+          <p>
+            Toast display messages related to an interaction happened between
+            user and the website. They usually stay on the screen for 2-3
+            seconds and then disappear.Toast can be used to show success
+            messages, warnings or errors.
+          </p>
+          <hr />
+          <p class="title">Toast- An example</p>
+          <p>
+            Click on following button to see the toast which is fixed at bottom
+            left corner of the screen.
+          </p>
+          <p>
+            We required to add <span class="secondary-text">toast</span> class
+            whith class <span class="secondary-text">hidden</span> on it. So,
+            that it will be hidden at initial state.
+          </p>
+
+          <div class="flex-container classic-bg-color pd-1">
+            <button id="showToast" class="btn btn-primary-outline">
+              Show Toast
+            </button>
+
+            <div class="toast gray-bg-color light-text hidden">
+              <div class="toast-text">
+                Can't send photo. Retry in 5 seconds.
+              </div>
+              <div class="toast-text secondary-text">
+                <strong> RETRY </strong>
+              </div>
+              <div class="toast-text close-toast">&times</div>
+            </div>
+          </div>
+          <p class="title-sm title">CSS code</p>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61ff98cabcdcda0015005998"
+              style="width: 100%; height: 200px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <p class="title-sm title">Javascript code</p>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61ff9a05bcdcda001500599a"
+              style="width: 100%; height: 255px"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+        <div id="list">
+          <h2>Lists</h2>
+          <p>
+            Lists are continuous, vertical indexes of text or images. They are
+            composed of items containing primary and supplemental actions, which
+            are represented by icons and text.
+          </p>
+          <hr />
+          <p class="title">Simple List</p>
+          <p>Simple List shows items contained at one positions.</p>
+          <p>
+            We have two classes for lists, one is parent class which is given to
+            < ul > tag which <span class="secondary-text">list-group</span> and
+            another class if for items which is
+            <span class="secondary-text">list-item-group</span> on < li > tag.
+          </p>
+          <div class="flex-container pd-1">
+            <ul class="list-group">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Morbi leo risus</li>
+              <li class="list-group-item">Porta ac consectetur ac</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61ff9e73bcdcda001500599d"
+              style="width: 100%; height: 177px"
+              frameborder="0"
+            ></iframe>
+          </div>
+
+          <hr />
+          <p class="title">Notification List</p>
+          <div class="flex-container pd-1">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="badge-with-avatar">
+                  <img
+                    class="avatar-sm"
+                    src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+                  />
+                  <span class="badge badge-round secondary-bg-color"></span>
+                </div>
+                You have new Notification
+              </li>
+              <li class="list-group-item">
+                <div class="badge-with-avatar">
+                  <img
+                    class="avatar-sm"
+                    src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+                  />
+                  <span class="badge badge-round success-bg-color"></span>
+                </div>
+                You have new Notification
+              </li>
+              <li class="list-group-item">
+                <div class="badge-with-avatar">
+                  <img
+                    class="avatar-sm"
+                    src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+                  />
+                  <span class="badge badge-round ternary-bg-color"></span>
+                </div>
+                You have new Notification
+              </li>
+              <li class="list-group-item">
+                <div class="badge-with-avatar">
+                  <img
+                    class="avatar-sm"
+                    src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+                  />
+                  <span class="badge badge-round danger-bg-color"></span>
+                </div>
+                You have new Notification
+              </li>
+            </ul>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61ffa07abcdcda001500599e"
+              style="width: 100%; height: 400px"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
       </div>
     </div>
 
