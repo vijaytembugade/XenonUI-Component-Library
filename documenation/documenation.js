@@ -125,5 +125,79 @@ $(document).ready(function () {
     $(this).siblings().removeClass("bold-text")
     $('#list').siblings().hide()
   });
+
+  //responsive navbar code
+  $("#responsive-introduction-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#introduction").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#introduction').siblings().hide()
+  });
+  $("#responsive-color-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#color").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#color').siblings().hide()
+  });
+  $("#responsive-typography-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#typography").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#typography').siblings().hide()
+  });
+  $("#responsive-avatar-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#avatar").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#avatar').siblings().hide()
+  });
+  $("#responsive-alert-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#alert").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#alert').siblings().hide()
+  });
+  $("#responsive-badge-id").click(function () {
+    $("#badge").slideDown(500);
+    $('#badge').siblings().hide()
+    $(this).addClass("bold-text")
+    $(this).siblings().removeClass("bold-text")
+  });
+  $("#responsive-button-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#button").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#button').siblings().hide()
+  });
+  $("#responsive-card-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#card").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#card').siblings().hide()
+  });
+  $("#responsive-image-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#image").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#image').siblings().hide()
+  });
+  $("#responsive-input-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#input").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#input').siblings().hide()
+  });
+  $("#responsive-toast-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#toast").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#toast').siblings().hide()
+  });
+  $("#responsive-list-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#list").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#list').siblings().hide()
+  });
 });
 
