@@ -1,3 +1,4 @@
+@import url(./default.css);
 .landing-page {
   display: flex;
   justify-content: center;
@@ -36,6 +37,29 @@
   padding: 1rem;
 }
 
+.xenon-design-one{
+  color:var(--primary-color);
+  animation: xenon-design-one 10s infinite;
+  font-weight: 500;
+}
+
+@keyframes xenon-design-one{
+  66%  {color: var(--ternary-color);}
+  33%   {color: var(--secondary-color);}
+  100% {color: var(--primary-color);}
+}
+
+.xenon-design-two{
+  color:var(--secondary-color);
+  animation: xenon-design-two 10s infinite;
+  font-weight: 500;
+}
+
+@keyframes xenon-design-two{
+  33%  {color: var(--secondary-color);}
+  66%  {color: var(--primary-color);}
+  100% {color: var(--ternary-color);}
+}
 @media only screen and (max-width: 986px) {
   .main-logo {
     font-size: 4rem;
