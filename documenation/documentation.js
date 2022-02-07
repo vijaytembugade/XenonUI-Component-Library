@@ -33,9 +33,9 @@ $(function () {
     toast.classList.toggle("hidden");
   })
 
-  $("#introduction").show();
+  $("#introduction").hide();
   $("#color").hide();
-  $("#typography").hide();
+  $("#typography").show();
   $("#avatar").hide();
   $("#alert").hide();
   $("#badge").hide();

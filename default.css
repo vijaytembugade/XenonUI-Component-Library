@@ -291,7 +291,7 @@ h6 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
