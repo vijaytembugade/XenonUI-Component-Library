@@ -39,7 +39,7 @@
 }
 
 .xenon-design-one{
-  color:var(--primary-color);
+  color:var(--text-color);
   animation: xenon-design-one 10s infinite;
   font-weight: 500;
 }
@@ -51,7 +51,7 @@
 }
 
 .xenon-design-two{
-  color:var(--secondary-color);
+  color:var(--text-color);
   animation: xenon-design-two 10s infinite;
   font-weight: 500;
 }
