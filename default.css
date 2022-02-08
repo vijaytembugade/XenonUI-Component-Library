@@ -299,6 +299,9 @@ h6 {
 .pd-1{
     padding: 1rem;
 }
+.mr-1{
+    margin: 1rem;
+}
 
 /* functional utilities */
 .hidden{
