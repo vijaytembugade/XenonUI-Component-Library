@@ -314,3 +314,9 @@ h6 {
         margin: 0rem 1rem ;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    body{
+        font-size: 90%;
+    }
+}
