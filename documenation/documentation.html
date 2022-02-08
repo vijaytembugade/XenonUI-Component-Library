@@ -4,32 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xenon- UI</title>
-
-    
-    
+    <link rel="shortcut icon" href="../Xe-logo.png" type="image/x-icon" />
+    <title>Xenon-Designs</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="../default.css" />
-    <link rel="stylesheet" href="../Components/Buttons/buttons.css" />
     <link rel="stylesheet" href="./documentation.css" />
-    <link rel="stylesheet" href="../Components/Lists/list.css" />
-    <link rel="stylesheet" href="../Components//Avatar/avatar.css" />
-    <link rel="stylesheet" href="../Components/Alerts/alerts.css" />
-    <link rel="stylesheet" href="../Components/Badge/badge.css" />
-    <link rel="stylesheet" href="../Components/Cards/cards.css" />
-    <link rel="stylesheet" href="../Components/Images/image.css" />
-    <link rel="stylesheet" href="../Components/Inputs/inputs.css" />
-    <link rel="stylesheet" href="../Components/Toast/toast.css" />
-    <link rel="stylesheet" href="../Components/Lists/list.css" />
-    <link
-      rel="stylesheet"
-      href="../Components/Text Utilities/text_utilities.css"
-    />
-    <link rel="stylesheet" href="../Components/Navbar/navbar.css" />
+    <link rel="stylesheet" href="../Components/main.css" />
   </head>
 
   <body class="">
@@ -53,19 +35,22 @@
           Close
         </div>
         <a href="../index.html" class="nav-item"> Home </a>
-        <a href="../documenation/documentation.html" class="nav-item">Documentation</a>
-        <div  class="nav-item" id="responsive-introduction-id">Introduction</div>
-        <div  class="nav-item" id="responsive-color-id">Colors</div>
-        <div  class="nav-item" id="responsive-typography-id">Typography</div>
-        <div  class="nav-item" id="responsive-avatar-id">Avatar</div>
-        <div  class="nav-item" id="responsive-alert-id">Alert</div>
-        <div  class="nav-item" id="responsive-badge-id">Badge</div>
-        <div  class="nav-item" id="responsive-button-id">Button</div>
-        <div  class="nav-item" id="responsive-card-id">Cards</div>
-        <div  class="nav-item" id="responsive-image-id">Images</div>
-        <div  class="nav-item" id="responsive-input-id">Inputs</div>
-        <div  class="nav-item" id="responsive-toast-id">Toast</div>
-        <div  class="nav-item" id="responsive-list-id">List</div>
+        <a href="../documenation/documentation.html" class="nav-item"
+          >Documentation</a
+        >
+        <div class="nav-item" id="responsive-introduction-id">Introduction</div>
+        <div class="nav-item" id="responsive-color-id">Colors</div>
+        <div class="nav-item" id="responsive-typography-id">Typography</div>
+        <div class="nav-item" id="responsive-avatar-id">Avatar</div>
+        <div class="nav-item" id="responsive-alert-id">Alert</div>
+        <div class="nav-item" id="responsive-badge-id">Badge</div>
+        <div class="nav-item" id="responsive-button-id">Button</div>
+        <div class="nav-item" id="responsive-card-id">Cards</div>
+        <div class="nav-item" id="responsive-image-id">Images</div>
+        <div class="nav-item" id="responsive-input-id">Inputs</div>
+        <div class="nav-item" id="responsive-toast-id">Toast</div>
+        <div class="nav-item" id="responsive-list-id">List</div>
+        <div class="nav-item" id="responsive-rating-id">Rating</div>
       </div>
     </nav>
 
@@ -86,11 +71,236 @@
         <div id="input-id">Inputs</div>
         <div id="toast-id">Toast</div>
         <div id="list-id">List</div>
+        <div id="rating-id">Rating</div>
       </div>
       <div class="main-content">
-        <div id="introduction">Intro</div>
-        <div id="color">Colors</div>
-        <div id="typography">Typography</div>
+        <div id="introduction">
+          <h1>Introduction to Xenon-Designs</h1>
+          <p>
+            Xenon-designs is open source designing and styling framework, which
+            helps developers can create conventional styles and components. It
+            has pre-defined classes , fonts , icons and typographies which will
+            ease the productions of web apps.
+          </p>
+          <p>
+            Xenon-Designs helps to make quick and fast designing and developing
+            styles for your apps.
+          </p>
+          <div class="motto">
+            Lets Design <span class="primary-text">Today</span>, for
+            <span class="secondary-text">Tomorrow!</span>
+          </div>
+          <hr />
+          <p class="title">Installation Guide</p>
+          <p>
+            To use Xenon-designs in your web apps , copy the following link and
+            paste it in &#60;head&#62; tag of your main HTML file.
+          </p>
+          <div class="code-box">Link goes here</div>
+        </div>
+        <div id="color">
+          <h2>Colors</h2>
+          <p>
+            Xenon-Designs comes with pre-defined color, which can be used
+            directly and indirectly in designs.
+          </p>
+          <p>
+            We can use these colors for background of elements or on
+            text-colors. Varients of the colors can be used to deplay various
+            things.
+          </p>
+          <hr />
+          <p class="title">Colors</p>
+          <div class="flex-container colors-container">
+            <div class="primary-bg-color">Primary #9370db</div>
+            <div class="secondary-bg-color">Secondary #f0739d</div>
+            <div class="ternary-bg-color">Ternary #0eafa7</div>
+            <div class="success-bg-color">Success #47cf73</div>
+            <div class="danger-bg-color">Danger #ee555f</div>
+            <div class="warning-bg-color">Warning #fedc56</div>
+            <div class="dark-bg-color">Dark #171717</div>
+            <div class="classic-bg-color">Classic #ddd</div>
+            <div class="gray-bg-color">Gray #777777</div>
+          </div>
+
+          <hr />
+          <p class="title">Background Color</p>
+          <p>We can give background color to any division or section of the code with help of classes which is name like
+            <em>colorname-bg-color</em>. For example, for Primary Color as background color , you can give class like <span class="primary-text">primary-bg-color.</span>
+          </p>
+          <div class="flex-container classic-bg-color pd-1">
+            <div class="primary-bg-color">Primary background</div>
+            <div class="secondary-bg-color">secondary background</div>
+            <div class="light-bg-color">light background</div>
+            <div class="success-bg-color">success background</div>
+          </div>
+
+          <div class="code-box">
+            <iframe src="https://www.thiscodeworks.com/embed/62029dd9234b8a0015700bc4" style="width: 100%; height: 138px;" frameborder="0"></iframe>
+          </div>
+
+        </div>
+        <div id="typography">
+          <h2>Typography</h2>
+          <p>
+            Documenation and examples for Xenon-Designs , which included
+            typography , settinngs, heading, text, fonts and icons.
+          </p>
+          <hr />
+          <p class="title">Headings</p>
+          <p>All HTML heading <strong>h1</strong> to <strong>h2.</strong></p>
+          <div class="flex-container-verticle classic-bg-color">
+            <h1>This is heading text - h1</h1>
+            <h2>This is heading text -h2</h2>
+            <h3>This is heading text -h3</h3>
+            <h4>This is heading text -h4</h4>
+            <h5>This is heading text -h5</h5>
+            <h6>This is heading text -h6</h6>
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/6202631eed723a001551c1f2"
+              style="width: 100%; height: 164px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+          <p class="title">Titles</p>
+          <p>
+            Three type of title we have
+            <span class="primary-text">title-sm, title-md & title-lg</span>. All
+            of these also have default class
+            <span class="secondary-text">title</span>
+          </p>
+          <div class="flex-container-verticle classic-bg-color pd-1">
+            <span class="title">This is title text</span>
+            <span class="title title-lg">This is title text-lg</span>
+            <span class="title title-md">This is title text-md </span>
+            <span class="title title-sm">This is title text-sm </span>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/620262f6ed723a001551c1f0"
+              style="width: 100%; height: 138px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+
+          <p class="title">Fonts</p>
+          <p>
+            In our Library, mostly we have used two fonts
+            <span class="primary-text">Roboto</span> and
+            <span class="secondary-text">Poppins.</span>
+          </p>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/620264afed723a001551c1fd"
+              style="width: 100%; height: 112px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+          <p class="title">Subtitle</p>
+          <p>
+            Subtitle is a text which has second presedence in anything. We have
+            class <span class="primary-text">subtitle</span> to make any text
+            subtitle.
+          </p>
+          <div class="flex-container classic-bg-color pd-1">
+            <span class="subtitle">This is subtitle </span>
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/62026757ed723a001551c202"
+              style="width: 100%; height: 50px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+          <p class="title">Centered Text</p>
+          <p>Centered text works with respect to its parent element.</p>
+          <div class="flex-container classic-bg-color pd-1">
+            <span class="centered-text"> This is centered text</span>
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/62026795ed723a001551c204"
+              style="width: 100%; height: 50px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+          <p class="title">Small Text</p>
+          <p>Small text is a text which is smaller than regular text</p>
+          <div class="flex-container classic-bg-color pd-1">
+            <span class="small-text">This is small text</span>
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/620267c2ed723a001551c205"
+              style="width: 100%; height: 50px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+
+          <p class="title">Inline text Utilities</p>
+          <p>
+            Inline text utilities have
+            <span class="primary-text"
+              >highlighted text, deleted text, underlined text, italic text,
+              strong text.</span
+            >
+          </p>
+          <div class="flex-container-verticle classic-bg-color pd-1">
+            <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+            <p>
+              <del
+                >This line of text is meant to be treated as deleted text.</del
+              >
+            </p>
+            <p><u>This line of text will render as underlined</u></p>
+            <p><strong>This line rendered as bold text.</strong></p>
+            <p><em>This line rendered as italicized text.</em></p>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/62026817ed723a001551c206"
+              style="width: 100%; height: 151px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+          <p class="title">Color Text</p>
+          <p>
+            We have predefined text colors which can we added through any text
+            with the help of classes.
+          </p>
+          <p>The structure of that class is like <em>colorname-text</em>.</p>
+          <div class="flex-container-verticle classic-bg-color pd-1">
+            <span class="primary-text">Primary-text</span>
+            <span class="secondary-text">Secondary-text</span>
+            <span class="ternary-text">Ternary-text</span>
+            <span class="success-text">Success-text</span>
+            <span class="warning-text">Warning-text</span>
+            <span class="Danger-text">Danger-text</span>
+            <span class="gray-text">Gray-text</span>
+            <span class="danger-text">Danger-text</span>
+            <span class="light-text">Light-text</span>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/620269d8ed723a001551c209"
+              style="width: 100%; height: 203px"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
         <div id="avatar">
           <h2>Avatar</h2>
           <p>
@@ -126,7 +336,7 @@
             <iframe
               src="https://www.thiscodeworks.com/embed/61face35b783be0015bbaf2f"
               style="font-style: 2rem; width: 100%; height: 99px"
-              loading = "lazy"
+              loading="lazy"
               frameborder="0"
             >
             </iframe>
@@ -1227,7 +1437,11 @@
           </div>
           <p class="title-sm title">Javascript code</p>
           <div class="code-box">
-            <iframe src="https://www.thiscodeworks.com/embed/61ff9a05bcdcda001500599a" style="width: 100%; height: 300px;" frameborder="0"></iframe>
+            <iframe
+              src="https://www.thiscodeworks.com/embed/61ff9a05bcdcda001500599a"
+              style="width: 100%; height: 300px"
+              frameborder="0"
+            ></iframe>
           </div>
         </div>
         <div id="list">
@@ -1315,6 +1529,55 @@
             <iframe
               src="https://www.thiscodeworks.com/embed/61ffa07abcdcda001500599e"
               style="width: 100%; height: 400px"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+
+        <div id="rating">
+          <h2>Rating</h2>
+          <p>
+            Ratings provide insight regarding others' opinions and experiences,
+            and can allow the user to submit a rating of their own.
+          </p>
+          <p>
+            We are using <span class="primary-text"> material-icons </span> for
+            rating component. Depending on size of material icons ratings star'
+            size can be adjusted.
+          </p>
+          <p>
+            Class <span class="secondary-text">rated</span> goldify the rating
+            component.
+          </p>
+          <hr />
+          <p class="title">Normal Ratings</p>
+          <div class="flex-container classic-bg-color pd-1">
+            <span class="material-icons rated"> star_rate </span>
+            <span class="material-icons rated"> star_rate </span>
+            <span class="material-icons rated"> star_rate </span>
+            <span class="material-icons"> star_rate </span>
+            <span class="material-icons"> star_rate </span>
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/62026c96ed723a001551c211"
+              style="width: 100%; height: 151px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+          <p class="title">Small ratings</p>
+          <div class="flex-container classic-bg-color pd-1">
+            <span class="material-icons md-18 rated"> star_rate </span>
+            <span class="material-icons md-18 rated"> star_rate </span>
+            <span class="material-icons md-18 rated"> star_rate </span>
+            <span class="material-icons md-18"> star_rate </span>
+            <span class="material-icons md-18"> star_rate </span>
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/62026d2b234b8a0015700b82"
+              style="width: 100%; height: 151px"
               frameborder="0"
             ></iframe>
           </div>

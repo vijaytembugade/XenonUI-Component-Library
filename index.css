@@ -1,3 +1,4 @@
+@import url(./default.css);
 .landing-page {
   display: flex;
   justify-content: center;
@@ -8,6 +9,7 @@
   width: 100%;
   flex-wrap: wrap;
 }
+
 .main-logo {
   font-size: 7rem;
   font-weight: bold;
@@ -36,6 +38,29 @@
   padding: 1rem;
 }
 
+.xenon-design-one{
+  color:var(--text-color);
+  animation: xenon-design-one 10s infinite;
+  font-weight: 500;
+}
+
+@keyframes xenon-design-one{
+  33%   {color: var(--ternary-color);}
+  66%  {color: var(--secondary-color);}
+  100% {color: var(--primary-color);}
+}
+
+.xenon-design-two{
+  color:var(--text-color);
+  animation: xenon-design-two 10s infinite;
+  font-weight: 500;
+}
+
+@keyframes xenon-design-two{
+  33%  {color: var(--secondary-color);}
+  66%  {color: var(--primary-color);}
+  100% {color: var(--ternary-color);}
+}
 @media only screen and (max-width: 986px) {
   .main-logo {
     font-size: 4rem;
@@ -59,7 +84,7 @@
   }
 
   .motto {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 1rem;
   }
 

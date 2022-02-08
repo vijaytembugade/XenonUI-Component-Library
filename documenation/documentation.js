@@ -45,6 +45,7 @@ $(function () {
   $("#input").hide();
   $("#toast").hide();
   $("#list").hide();
+  $("#rating").hide();
 
   $(".sidebar").on("click", "div", () => {
     console.log(this)
@@ -123,6 +124,12 @@ $(function () {
     $(this).siblings().removeClass("bold-text")
     $('#list').siblings().hide()
   });
+  $("#rating-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#rating").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#rating').siblings().hide()
+  });
 
   //responsive navbar code
   $("#responsive-introduction-id").click(function () {
@@ -196,6 +203,12 @@ $(function () {
     $("#list").slideDown(500);
     $(this).siblings().removeClass("bold-text")
     $('#list').siblings().hide()
+  });
+  $("#responsive-rating-id").click(function () {
+    $(this).addClass("bold-text")
+    $("#rating").slideDown(500);
+    $(this).siblings().removeClass("bold-text")
+    $('#rating').siblings().hide()
   });
 });
 
