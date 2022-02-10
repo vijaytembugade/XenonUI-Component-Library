@@ -8,18 +8,13 @@ $(function () {
   const closeNavbar = document.querySelector("#closeNavbar");
 
   hamburger.addEventListener("click", () => {
-    responsiveNavbar.style.display = "flex";
+    responsiveNavbar.classList.toggle("display-navbar");
   });
 
   closeNavbar.addEventListener("click", () => {
-    responsiveNavbar.style.display = "none";
+    responsiveNavbar.classList.toggle("display-navbar");
   });
 
-  window.addEventListener("resize", () => {
-    if (window.outerWidth > 768) {
-      responsiveNavbar.style.display = "none";
-    }
-  })
 
   //show aand hide toast
   const showToast = document.querySelector("#showToast");
