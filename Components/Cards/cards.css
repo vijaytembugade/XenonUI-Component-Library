@@ -3,7 +3,7 @@
 .card {
   background-color: var(--light-color);
   min-width: 17rem;
-  max-width: 20rem;
+  max-width: 17rem;
   max-height: 31.25rem;
   display: flex;
   flex-direction: column;
