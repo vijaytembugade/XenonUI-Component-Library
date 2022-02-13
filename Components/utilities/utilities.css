@@ -1,12 +1,12 @@
 /* This utilities are for developer use only, which is in beta version */
 
 /* margin classes */
-.mr-1{
-    margin: 1rem;
+.mr-1 {
+  margin: 1rem;
 }
 
-.mr-2{
-    margin: 2rem;
+.mr-2 {
+  margin: 2rem;
 }
 
 /* .mr-top-5{
@@ -14,42 +14,47 @@
 } */
 
 /* padding classes */
-.pd-1{
-    padding: 1rem;
+.pd-1 {
+  padding: 1rem;
 }
 
-.pd-2{
-    padding: 2rem;
+.pd-2 {
+  padding: 2rem;
 }
 
 /* container */
-.container{
-    margin: 5rem 3rem 2rem ;
+.container {
+  margin: 5rem 3rem 2rem;
 }
 
-
-.flex-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap : wrap;
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.flex-container-verticle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1rem;
+.flex-container-verticle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 /* functional utilities */
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 
-.show{
-    display: flex;
+.show {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0rem 1rem;
+  }
 }
