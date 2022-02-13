@@ -26,12 +26,28 @@
       </div>
 
       <!-- nav-item on right side  -->
-      <a href="" class="nav-item"> Home </a>
-      <a href="" class="nav-item">About</a>
-      <a href="" class="nav-item">Settings</a>
-      <a href="" class="nav-item">Contact</a>
-      <a href="" class="nav-item">    <img class="avatar-xs" src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg" />
-      </a>
+      <ul class="nav-menu">
+        <li>
+          <a href="" class="nav-item"> Home </a>
+        </li>
+        <li>
+          <a href="" class="nav-item">About</a>
+        </li>
+        <li>
+          <a href="" class="nav-item">Settings</a>
+        </li>
+        <li>
+          <a href="" class="nav-item">Contact</a>
+        </li>
+        <li>
+          <a href="" class="nav-item">
+            <img
+              class="avatar-xs"
+              src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+            />
+          </a>
+        </li>
+      </ul>
 
       <div id="hamburger" class="hamburger">
         <span class="material-icons md-36"> menu </span>
@@ -39,7 +55,7 @@
 
       <div class="responsive-navbar display-navbar">
         <div id="closeNavbar" class="danger-text">
-          <span  class="material-icons md-36"> close </span>
+          <span class="material-icons md-36"> close </span>
           Close
         </div>
         <a href="" class="nav-item"> Home </a>
@@ -47,13 +63,13 @@
         <a href="" class="nav-item">Settings</a>
         <a href="" class="nav-item">Contact</a>
         <a href="" class="nav-item">
-          <img class="avatar-sm" src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg" />
+          <img
+            class="avatar-sm"
+            src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+          />
         </a>
       </div>
     </nav>
-
-    
-    
 
     <script>
       const hamburger = document.querySelector("#hamburger");
@@ -67,7 +83,6 @@
       closeNavbar.addEventListener("click", () => {
         responsiveNavbar.classList.toggle("display-navbar");
       });
-
     </script>
   </body>
 </html>

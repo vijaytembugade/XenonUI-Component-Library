@@ -11,22 +11,34 @@ nav {
   background-color: var(--bg-color);
   height: 5rem;
 }
+
+
 .nav-brand {
   margin-right: auto;
   width: 7rem;
   min-width: 5rem;
 }
 
+
+.nav-menu{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav-menu > li{
+  list-style-type: none;
+}
+
 .nav-item {
-  min-width: 8rem;
-  cursor: pointer;
-  transition: all 0.5s;
-  text-align: center;
+  display: flex;
 }
 
 .nav-item:hover,
 .nav-item:focus {
   font-weight: 500;
+  transform: scale(1.07);
+
 }
 
 .hamburger {
