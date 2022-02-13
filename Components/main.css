@@ -1,4 +1,5 @@
 @import url("../default.css");
+@import url("./utilities/utilities.css");
 @import url("./Alerts/alerts.css");
 @import url("./Avatar/avatar.css");
 @import url("./Badge/badge.css");
