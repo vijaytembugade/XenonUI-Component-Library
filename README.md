@@ -46,3 +46,14 @@ This project is build using following technologies.
 
 Put the above link tag with link  in `head` of main html file of the project. 
 
+## Screen Shots
+
+- Home Screen
+![image](https://user-images.githubusercontent.com/58331578/154844352-90d1c50a-a909-4e23-a838-d1bd6ec33778.png)
+
+- Documentation
+![image](https://user-images.githubusercontent.com/58331578/154844368-a5d99bd5-2296-4ec3-8053-97f5d0b7c54d.png)
+
+![image](https://user-images.githubusercontent.com/58331578/154844388-0c185726-f1a5-4064-9b8e-b3c0acb531dc.png)
+
+
