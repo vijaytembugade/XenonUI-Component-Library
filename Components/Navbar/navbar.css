@@ -18,8 +18,10 @@ nav {
   width: 7rem;
   min-width: 5rem;
   background-color: #f1f1f1;
-  border-radius: 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
 }
+
 
 
 .nav-menu{
