@@ -28,6 +28,50 @@ $(function () {
     toast.classList.toggle("hidden");
   })
 
+  //dark mode
+
+
+  function darkMode(){
+    localStorage.setItem("theme", "dark-mode")
+    document.querySelector(".dark-mode").innerHTML = `<span class="material-icons">light_mode</span>`
+    document.documentElement.style.setProperty("--bg-color", "#1f2933");
+    document.documentElement.style.setProperty("--classic-color", "#4c4c4c");
+    document.documentElement.style.setProperty("--text-color", "#f7f7f7");
+    document.documentElement.style.setProperty("--light-color", "#2c2c2c");
+    document.querySelector(".nav-brand").style.backGround
+  }
+
+  function lightMode(){
+    localStorage.setItem("theme", "light-mode")
+    document.querySelector(".dark-mode").innerHTML = `<span class="material-icons">dark_mode</span>`
+    document.documentElement.style.setProperty("--bg-color", "#f1f1f1");
+    document.documentElement.style.setProperty("--classic-color", "#ddd");
+    document.documentElement.style.setProperty("--text-color", "#171717");
+    document.documentElement.style.setProperty("--light-color", "#fff");
+    document.querySelector(".nav-brand").style.backGround
+  }
+
+  if (!localStorage.getItem("theme")){
+    console.log("decided")
+    localStorage.setItem("theme", "light-mode")
+  }else{
+    if (localStorage.getItem("theme") === "light-mode") {
+      lightMode()
+    } else if (localStorage.getItem("theme") === "dark-mode") {
+      darkMode()
+    }
+  }
+
+  document.querySelector(".dark-mode").addEventListener("click", () => {
+    if (localStorage.getItem("theme") === "light-mode") {
+      darkMode()
+    } else if (localStorage.getItem("theme") === "dark-mode") {
+      localStorage.setItem("theme", "light-mode")
+      lightMode()
+    }
+  })
+
+
   $("#introduction").show();
   $("#color").hide();
   $("#typography").hide();

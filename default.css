@@ -98,6 +98,7 @@ video {
 
   /* text color  */
   --dark-color: #171717;
+  --text-color: #171717;
   --gray-color: #777777;
   --classic-color: #ddd;
 
@@ -128,6 +129,7 @@ body {
   background: var(--bg-color);
   font-family: "Poppins", sans-serif;
   line-height: 1.6rem;
+  color: var(--text-color);
 }
 
 a {
@@ -264,7 +266,9 @@ h6 {
   padding-bottom: 3px;
 }
 
-
+.dark-mode{
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 480px) {
   body {

@@ -17,6 +17,8 @@ nav {
   margin-right: auto;
   width: 7rem;
   min-width: 5rem;
+  background-color: #f1f1f1;
+  border-radius: 1rem;
 }
 
 
@@ -93,7 +95,7 @@ nav {
     bottom: 0;
     right: 0;
     left: 70%;
-    background-color: white;
+    background-color: var(--light-color);
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
       rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     overflow: auto;
