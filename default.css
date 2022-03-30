@@ -171,7 +171,7 @@ h6 {
 }
 
 .dark-text {
-  color: var(--dark-color);
+  color: var(--text-color);
 }
 
 .gray-text {
