@@ -266,8 +266,20 @@ h6 {
   padding-bottom: 3px;
 }
 
-.dark-mode{
+.dark-mode {
   cursor: pointer;
+}
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
 
 @media only screen and (max-width: 480px) {
