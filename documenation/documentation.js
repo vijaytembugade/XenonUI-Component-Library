@@ -101,6 +101,7 @@ $(function () {
   $("#list").hide();
   $("#rating").hide();
   $("#modal").hide();
+  $("#navigation").hide();
 
   $(".sidebar").on("click", "div", () => {
     console.log(this);
@@ -191,6 +192,12 @@ $(function () {
     $(this).siblings().removeClass("bold-text");
     $("#modal").siblings().hide();
   });
+  $("#navigation-id").click(function () {
+    $(this).addClass("bold-text");
+    $("#navigation").slideDown(500);
+    $(this).siblings().removeClass("bold-text");
+    $("#navigation").siblings().hide();
+  });
 
   //responsive navbar code
   $("#responsive-introduction-id").click(function () {
@@ -276,5 +283,11 @@ $(function () {
     $("#modal").slideDown(500);
     $(this).siblings().removeClass("bold-text");
     $("#modal").siblings().hide();
+  });
+  $("#responsive-navigation-id").click(function () {
+    $(this).addClass("bold-text");
+    $("#navigation").slideDown(500);
+    $(this).siblings().removeClass("bold-text");
+    $("#navigation").siblings().hide();
   });
 });
