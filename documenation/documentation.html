@@ -27,9 +27,7 @@
           <a href="/" class="nav-item"> Home </a>
         </li>
         <li>
-          <a href="./documenation/documentation.html" class="nav-item"
-            >Documentation</a
-          >
+          <a href="documentation.html" class="nav-item">Documentation</a>
         </li>
         <li>
           <span class="dark-mode">
@@ -64,6 +62,10 @@
         <div class="nav-item" id="responsive-toast-id">Toast</div>
         <div class="nav-item" id="responsive-list-id">List</div>
         <div class="nav-item" id="responsive-rating-id">Rating</div>
+        <div class="nav-item" id="responsive-modal-id">Modal</div>
+        <div class="nav-item" id="responsive-navigation-id">Navigation</div>
+        <div class="nav-item" id="responsive-grid-id">Grids</div>
+        <div class="nav-item" id="responsive-slider-id">Slider</div>
       </div>
     </nav>
 
@@ -85,6 +87,10 @@
         <div id="toast-id">Toast</div>
         <div id="list-id">List</div>
         <div id="rating-id">Rating</div>
+        <div id="modal-id">Modal</div>
+        <div id="navigation-id">Navigation</div>
+        <div id="grid-id">Grids</div>
+        <div id="slider-id">Slider</div>
       </div>
       <div class="main-content">
         <div id="introduction">
@@ -1631,6 +1637,246 @@
             <iframe
               src="https://www.thiscodeworks.com/embed/62026d2b234b8a0015700b82"
               style="width: 100%; height: 151px"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+
+        <div id="modal">
+          <h2>Modal</h2>
+          <p>
+            A modal (also called a modal window or lightbox) is a web page
+            element that displays in front of and deactivates all other page
+            content. To return to the main content, the user must engage with
+            the modal by completing an action or by closing it.
+          </p>
+          <hr />
+          <p class="title">Simple Modal</p>
+
+          <div class="flex-container classic-bg-color pd-1">
+            <button id="showModal" class="btn btn-primary-outline">
+              Show Modal
+            </button>
+          </div>
+          <div class="modal-container hidden">
+            <dialog class="modal" open>
+              <div class="title">This is Modal Header</div>
+              <div>
+                <p>This is modal content</p>
+              </div>
+              <div>
+                <button
+                  id="closeModal"
+                  class="btn btn-primary-outline btn-small"
+                >
+                  Close
+                </button>
+              </div>
+            </dialog>
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/624b3fd3cbb8c90015cea988"
+              style="width: 100%; height: 229px"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+
+        <div id="navigation">
+          <h2>Navbar</h2>
+          <p>
+            Navigation bar <em>aka</em> Navbar is important for any website.
+            Navbar is basically list of links which helps us to navigate
+            throughout the website.
+          </p>
+          <hr />
+          <div class="classic-bg-color pd-1">
+            <div class="nav text-dark">
+              <!-- nav icon -->
+
+              <!-- nav brand  -->
+              <div class="nav-brand">
+                <img src="../../Xenon.svg" alt="Xenon" />
+              </div>
+
+              <!-- nav-item on right side  -->
+              <ul class="nav-menu">
+                <li>
+                  <a href="" class="nav-item"> Home </a>
+                </li>
+                <li>
+                  <a href="" class="nav-item">About</a>
+                </li>
+                <li>
+                  <a href="" class="nav-item">Settings</a>
+                </li>
+                <li>
+                  <a href="" class="nav-item">Contact</a>
+                </li>
+                <li>
+                  <a href="" class="nav-item">
+                    <img
+                      class="avatar-xs"
+                      src="https://miro.medium.com/fit/c/262/262/1*MFLNc70kh8oLPUsDaUH4sg.jpeg"
+                    />
+                  </a>
+                </li>
+              </ul>
+
+              <div id="hamburger" class="hamburger">
+                <span class="material-icons md-36"> menu </span>
+              </div>
+            </div>
+          </div>
+
+          <p class="title tilte-sm">CSS code</p>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/624bc6e0cbb8c90015cea9a7"
+              style="width: 100%; height: 500px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <p class="title tilte-sm">Javascript code</p>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/624bc9d8cbb8c90015cea9a8"
+              style="width: 100%; height: 229px"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+
+        <div id="grid">
+          <h2>Grids</h2>
+          <p>
+            Use grids to create sections of your viewport. Using css grid you
+            can create way more complex layouts than with tables.
+          </p>
+          <p>
+            Use <span class="primary-text">grid-container</span> class to apply
+            grid layout and <span class="primary-text">grid-item</span> class on
+            each individual item.
+          </p>
+          <hr />
+          <p class="title">Grid 3-Columns</p>
+          <p>Use class <span class="secondary-text">grid-cols-3</span></p>
+          <div class="classic-bg-color pd-1">
+            <div class="grid-container grid-cols-3">
+              <div class="grid-item">
+                <img class="responsive-img" src="https://picsum.photos/500" />
+              </div>
+              <div class="grid-item">
+                <img class="responsive-img" src="https://picsum.photos/500" />
+              </div>
+              <div class="grid-item">
+                <img class="responsive-img" src="https://picsum.photos/500" />
+              </div>
+            </div>
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/624c31e81f7c8d0015f85036"
+              style="width: 100%; height: 151px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+          <p class="title">Grid 2-Columns</p>
+          <p>Use class <span class="secondary-text">grid-cols-2</span></p>
+          <div class="classic-bg-color pd-1">
+            <div class="grid-container grid-cols-2">
+              <div class="grid-item">
+                <img class="responsive-img" src="https://picsum.photos/500" />
+              </div>
+              <div class="grid-item">
+                <img class="responsive-img" src="https://picsum.photos/500" />
+              </div>
+            </div>
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/624c32121f7c8d0015f85037"
+              style="width: 100%; height: 138px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+          <p class="title">Grid 3-Rows</p>
+          <p>Use class <span class="secondary-text">grid-row-3</span></p>
+          <div class="classic-bg-color pd-1">
+            <div class="grid-container grid-rows-3">
+              <div class="grid-item">
+                <img class="responsive-img" src="https://picsum.photos/500" />
+              </div>
+              <div class="grid-item">
+                <img class="responsive-img" src="https://picsum.photos/500" />
+              </div>
+              <div class="grid-item">
+                <img class="responsive-img" src="https://picsum.photos/500" />
+              </div>
+            </div>
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/624c323b1f7c8d0015f85038"
+              style="width: 100%; height: 151px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+          <p class="title">Grid 2-rows</p>
+          <p>Use class <span class="secondary-text">grid-rows-2</span></p>
+          <div class="classic-bg-color pd-1">
+            <div class="grid-container grid-rows-2">
+              <div class="grid-item">
+                <img class="responsive-img" src="https://picsum.photos/500" />
+              </div>
+              <div class="grid-item">
+                <img class="responsive-img" src="https://picsum.photos/500" />
+              </div>
+            </div>
+          </div>
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/624c325b1f7c8d0015f85039"
+              style="width: 100%; height: 190px"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <hr />
+        </div>
+
+        <div id="slider">
+          <h2>Slider</h2>
+          <p>
+            &lt;input /&gt; elements of type
+            <span class="secondary-text">range</span> let the user specify a
+            numeric value which must be no less than a given value, and no more
+            than another given value. The precise value, however, is not
+            considered important. This is typically represented using a slider
+            or dial control rather than a text entry box like the number input
+            type.
+          </p>
+
+          <hr />
+          <div class="flex-container classic-bg-color pd-1">
+            <section class="range-slider">
+              <input
+                value="500"
+                min="500"
+                max="50000"
+                step="500"
+                type="range"
+              />
+            </section>
+          </div>
+
+          <div class="code-box">
+            <iframe
+              src="https://www.thiscodeworks.com/embed/624c87d81f7c8d0015f85056"
+              style="width: 100%; height: 125px"
               frameborder="0"
             ></iframe>
           </div>

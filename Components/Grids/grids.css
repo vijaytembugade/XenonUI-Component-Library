@@ -1,0 +1,26 @@
+.grid-container {
+  display: grid;
+  background-color: var(--gray-color);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, auto);
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, auto);
+}
+.grid-rows-3 {
+  grid-template-rows: repeat(3, auto);
+}
+.grid-rows-2 {
+  grid-template-rows: repeat(2, auto);
+}
+
+.grid-item {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 3rem;
+  min-height: 5rem;
+  background-color: var(--classic-color);
+}
